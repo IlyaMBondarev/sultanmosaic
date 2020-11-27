@@ -620,6 +620,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-user-select: none;
           user-select: none;
   max-width: 100%;
+  min-width: 100%;
 }
 .advantages__image-bottom-right {
   position: absolute;
@@ -872,6 +873,10 @@ h1, h2, h3, h4, h5, h6 {
   fill: #252b3e;
 }
 
+.full-portfolio {
+  position: relative;
+  overflow: hidden;
+}
 .full-portfolio__row {
   display: flex;
 }
@@ -982,6 +987,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 .full-portfolio__link svg * {
   fill: #f7e12a;
+}
+.full-portfolio__arrow {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.full-portfolio__arrow img {
+  position: relative;
+  z-index: 5;
+}
+.full-portfolio__arrow:hover::after {
+  opacity: 1;
+}
+.full-portfolio__arrow::after {
+  content: "";
+  transition: opacity 0.15s linear;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 125px;
+  height: 125px;
+  background-color: #ffffff;
+  opacity: 0.55;
+  z-index: 4;
+  border-radius: 50%;
+}
+.full-portfolio__arrow-left {
+  left: 7px;
+}
+.full-portfolio__arrow-left::after {
+  left: -62px;
+}
+.full-portfolio__arrow-right {
+  right: 7px;
+}
+.full-portfolio__arrow-right::after {
+  right: -62px;
 }
 
 .questions {
