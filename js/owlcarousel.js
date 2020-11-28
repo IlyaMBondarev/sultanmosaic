@@ -1,15 +1,11 @@
-
-document.querySelector('.wrapper').classList.add('loaded');
-
-
 //карусель-слайдер на странице услуги
 
 $(document).ready(function() {
     let owl = $('.owl-carousel');
-    if (owl.length) {
+    if (owl) {
         owl.owlCarousel({
-            items: 3,
-            margin: 20,
+            items: 4,
+            margin: 15,
             mouseDrag: false,
             nav: false,
             dots: false,
@@ -23,6 +19,9 @@ $(document).ready(function() {
                 950: {
                     items: 3,
                 },
+                1200: {
+                    items: 4,
+                }
             }
         });
 
