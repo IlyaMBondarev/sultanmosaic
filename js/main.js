@@ -3,12 +3,18 @@ document.querySelector('.wrapper').classList.add('loaded');
 
 //call back
 
-let popupCallbackBackground = document.querySelector('.popup-callback-bg');
-let popupCallbackOpenBtns = document.querySelectorAll('.popup-callback-open-btn');
-let popupCallback = popupCallbackBackground.querySelector('.popup-callback');
-let popupCallbackCloseBtn = popupCallbackBackground.querySelector('.popup-callback__close');
+if ($('.popup-callback-bg').length) {
 
-if (popupCallbackBackground) {
+    let popupCallbackBackground = document.querySelector('.popup-callback-bg');
+    let popupCallbackOpenBtns = document.querySelectorAll('.popup-callback-open-btn');
+    let popupCallback = popupCallbackBackground.querySelector('.popup-callback');
+    let popupCallbackCloseBtn = popupCallbackBackground.querySelector('.popup-callback__close');
+    const popupCallbackForm = document.getElementById('popupCallbackForm');
+
+    popupCallbackForm.addEventListener('submit', event => {
+        event.preventDefault();
+        formSend(popupCallbackForm);
+    });
 
     popupCallbackOpenBtns.forEach(button => {
         button.addEventListener('click', () => {
@@ -28,12 +34,18 @@ if (popupCallbackBackground) {
 }
 //estimate
 
-let popupEstimateBackground = document.querySelector('.popup-callback-bg-estimate');
-let popupEstimateOpenBtns = document.querySelectorAll('.popup-callback-estimate-open-btn');
-let popupEstimate = popupEstimateBackground.querySelector('.popup-callback');
-let popupEstimateCloseBtn = popupEstimateBackground.querySelector('.popup-callback__close');
+if ($('.popup-callback-bg-estimate').length) {
 
-if (popupEstimateBackground) {
+    let popupEstimateBackground = document.querySelector('.popup-callback-bg-estimate');
+    let popupEstimateOpenBtns = document.querySelectorAll('.popup-callback-estimate-open-btn');
+    let popupEstimate = popupEstimateBackground.querySelector('.popup-callback');
+    let popupEstimateCloseBtn = popupEstimateBackground.querySelector('.popup-callback__close');
+    const popupEstimateForm = document.getElementById('popupEstimateForm');
+
+    popupEstimateForm.addEventListener('submit', event => {
+        event.preventDefault();
+        formSend(popupEstimateForm);
+    });
 
     popupEstimateOpenBtns.forEach(button => {
         button.addEventListener('click', () => {
@@ -53,13 +65,17 @@ if (popupEstimateBackground) {
 }
 
 //project
+if ($('.popup-project-bg').length) {
+    let popupProjectBackground = document.querySelector('.popup-project-bg');
+    let popupProjectOpenBtns = document.querySelectorAll('.popup-project-open-btn');
+    let popupProject = popupProjectBackground.querySelector('.popup-project');
+    let popupProjectCloseBtn = popupProjectBackground.querySelector('.popup-project__close');
+    const popupProjectForm = document.getElementById('popupProjectForm');
 
-let popupProjectBackground = document.querySelector('.popup-project-bg');
-let popupProjectOpenBtns = document.querySelectorAll('.popup-project-open-btn');
-let popupProject = popupProjectBackground.querySelector('.popup-project');
-let popupProjectCloseBtn = popupProjectBackground.querySelector('.popup-project__close');
-
-if (popupProjectBackground) {
+    popupProjectForm.addEventListener('submit', event => {
+        event.preventDefault();
+        formSend(popupProjectForm);
+    });
 
     popupProjectOpenBtns.forEach(button => {
         button.addEventListener('click', () => {
@@ -80,21 +96,7 @@ if (popupProjectBackground) {
 
 // validation
 
-const popupCallbackForm = document.getElementById('popupCallbackForm');
-const popupEstimateForm = document.getElementById('popupEstimateForm');
-const popupProjectForm = document.getElementById('popupProjectForm');
-popupCallbackForm.addEventListener('submit', event => {
-    event.preventDefault();
-    formSend(popupCallbackForm);
-});
-popupEstimateForm.addEventListener('submit', event => {
-    event.preventDefault();
-    formSend(popupEstimateForm);
-});
-popupProjectForm.addEventListener('submit', event => {
-    event.preventDefault();
-    formSend(popupProjectForm);
-});
+
 
 async function formSend(form) {
     let error = formValidate(form);

@@ -910,9 +910,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .first-screen-main__block-right p {
   font-size: 1.6rem;
-  line-height: 150%;
+  line-height: 130%;
   margin-top: 12px;
   color: #6a6c74;
+  margin-bottom: 12px;
 }
 .first-screen-main__button-switcher {
   position: absolute;
@@ -1971,7 +1972,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 8%;
   right: 14%;
   border-radius: 50%;
-  background-color: #f7e12a;
+  background-color: transparent;
   color: #24262c;
   font-size: 3.1rem;
   text-align: center;
@@ -2132,6 +2133,24 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   padding: 27px;
+  border-radius: 15px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  box-shadow: none;
+  transform-style: flat;
+  position: relative;
+}
+.catalog__questions:before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  border-radius: 15px;
+  transition: all 0.25s ease-out;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 4px 5.7px 21px 0 rgba(0, 0, 0, 0.13);
 }
 .catalog__questions svg {
   width: 96px;
@@ -2252,6 +2271,16 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.25s linear;
+}
+.catalog-item__block:hover {
+  background-color: #252b3e;
+}
+.catalog-item__block:hover .catalog-item__name {
+  color: #f7e12a;
+}
+.catalog-item__block:hover .catalog-item__info * {
+  color: #ffffff;
 }
 .catalog-item__name {
   text-align: center;
@@ -2259,6 +2288,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "PT sans bold";
   color: #24262c;
   text-transform: uppercase;
+  transition: all 0.25s linear;
 }
 .catalog-item__info {
   display: flex;
@@ -2270,6 +2300,7 @@ h1, h2, h3, h4, h5, h6 {
 .catalog-item__info span {
   font-size: 1.4rem;
   color: #6a6c74;
+  transition: all 0.25s linear;
 }
 .catalog-item__maker {
   text-transform: uppercase;
