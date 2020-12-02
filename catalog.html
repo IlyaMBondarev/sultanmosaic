@@ -7,11 +7,148 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
     <main class="page">
+<div class="popup-callback-bg">
+    <div class="popup-callback">
+        <button class="popup-callback__close">+</button>
+        <p class="popup-callback__title">Заполните форму ниже</p>
+        <p class="popup-callback__subtitle">и&nbsp;мы свяжемся с&nbsp;Вами в&nbsp;ближайшее время</p>
+        <form action="#" class="popup-callback__form" id="popupCallbackForm">
+            <div class="popup-callback__block">
+                <label for="popupCallbackName">Ваше имя:
+                    <input id="popupCallbackName" type="text" placeholder="Анастасия" class="_req">
+                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                </label></div>
+            <div class="popup-callback__block">
+                <label for="popupCallbackPhone">Телефон:
+                    <input id="popupCallbackPhone" type="tel" placeholder="+7 (926) 000-00-00"
+                           class="_req _phone masked">
+                    <span class="input-error">Номер введен неверно!</span>
+                </label></div>
+            <button class="popup-callback__button yellow-button" type="submit" data-text="Оставить заявку"><span>Оставить заявку</span></button>
+            <p class="popup-callback__small-content">* Нажимая кнопку действия, вы соглашаетесь с&nbsp;<a href="#">пользовательским соглашением</a>.</p>
+        </form>
+    </div>
+</div>
+<div class="popup-callback-bg-estimate">
+    <div class="popup-callback">
+        <button class="popup-callback__close">+</button>
+        <p class="popup-callback__title">Заполните форму ниже</p>
+        <p class="popup-callback__subtitle">и&nbsp;мы свяжемся с&nbsp;Вами для&nbsp;уточнения всех деталей</p>
+        <form action="#" class="popup-callback__form" id="popupEstimateForm">
+            <div class="popup-callback__block">
+                <label for="popupEstimateName">Ваше имя:
+                    <input id="popupEstimateName" type="text" placeholder="Анастасия" class="_req">
+                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                </label></div>
+            <div class="popup-callback__block">
+                <label for="popupEstimatePhone">Телефон:
+                    <input id="popupEstimatePhone" type="tel" placeholder="+7 (926) 000-00-00"
+                           class="_req _phone masked">
+                    <span class="input-error">Номер введен неверно!</span>
+                </label></div>
+            <button class="popup-callback__button yellow-button" type="submit" data-text="Оставить заявку"><span>Оставить заявку</span></button>
+            <p class="popup-callback__small-content">* Нажимая кнопку действия, вы соглашаетесь с&nbsp;<a href="#">пользовательским соглашением</a>.</p>
+        </form>
+    </div>
+</div>        <div class="popup-project-bg">
+            <div class="popup-project">
+                <button class="popup-project__close">+</button>
+                <div class="popup-project__left">
+                    <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img src="img/Услуга/arrow-left.png" alt="left"></button>
+                    <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img src="img/Услуга/arrow-right.png" alt="right"></button>
+                    <div class="owl-carousel">
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_2.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_3.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_4.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_5.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_2.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_3.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_4.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-project__right">
+                    <h3 class="popup-project__title"><span>стеклянная мозаика</span></h3>
+                    <div class="popup-project__subtitle">
+                        <p>Производитель: <span>gaudi ceramics</span></p>
+                    </div>
+                    <div class="popup-project__art">
+                        <p>Арт: <span>2589754</span></p>
+                    </div>
+                    <p class="popup-project__table-name">Характеристики:</p>
+                    <table class="popup-project__table">
+                        <tr>
+                            <td>Материал</td>
+                            <td>Стеклянная</td>
+                        </tr>
+                        <tr>
+                            <td>Размер сетки</td>
+                            <td>327*327 мм</td>
+                        </tr>
+                        <tr>
+                            <td>Размер чипа</td>
+                            <td>20*20 мм</td>
+                        </tr>
+                        <tr>
+                            <td>Толщина чипа</td>
+                            <td>4 мм</td>
+                        </tr>
+                        <tr>
+                            <td>Поверхность</td>
+                            <td>Матовая</td>
+                        </tr>
+                        <tr>
+                            <td>Страна производства</td>
+                            <td>Китай</td>
+                        </tr>
+                        <tr>
+                            <td>Цвет</td>
+                            <td>Голубая</td>
+                        </tr>
+                    </table>
+                </div>
+                <form class="popup-project__form" id="popupProjectForm">
+                    <div class="popup-project__block">
+                        <label for="popupProjectName">
+                            <input id="popupProjectName" type="text" placeholder="Ваше Имя" class="_req">
+                            <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                        </label>
+                    </div>
+                    <div class="popup-project__block">
+                        <label for="popupProjectPhone">
+                            <input id="popupProjectPhone" type="tel" placeholder="Ваш Телефон"
+                                   class="_req _phone masked">
+                            <span class="input-error">Номер введен неверно!</span>
+                        </label>
+                    </div>
+                    <button class="popup-project__button yellow-button" type="submit" data-text="Жду звонок"><span>Жду звонок</span></button>
+                </form>
+            </div>
+        </div>
         <div class="first-screen">
 <header class="header container">
     <div class="header__top">
@@ -27,7 +164,7 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <button class="header__callback-btn slide-in">
+        <button class="header__callback-btn slide-in popup-callback-open-btn">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.942 53.942" style="enable-background:new 0 0 53.942 53.942;" xml:space="preserve">
                 <path d="M53.364,40.908c-2.008-3.796-8.981-7.912-9.288-8.092c-0.896-0.51-1.831-0.78-2.706-0.78c-1.301,0-2.366,0.596-3.011,1.68
                     c-1.02,1.22-2.285,2.646-2.592,2.867c-2.376,1.612-4.236,1.429-6.294-0.629L17.987,24.467c-2.045-2.045-2.233-3.928-0.632-6.291
@@ -122,7 +259,10 @@
                             </div>
                             <div class="first-screen__block first-screen__block_last">
                                 <div class="first-screen__icon">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                         xml:space="preserve">
                                         <path d="M185.86,0H42.837C23.18,0,5.953,15.183,5.953,34.846v143.023c0,19.663,17.227,36.456,36.884,36.456H185.86
                                             c19.657,0,34.419-16.794,34.419-36.456V34.846C220.279,15.183,205.517,0,185.86,0z M196.465,177.869
                                             c0,6.523-4.076,12.643-10.605,12.643H42.837c-6.529,0-13.07-6.119-13.07-12.643V34.846c0-6.524,6.541-11.032,13.07-11.032H185.86
@@ -156,51 +296,264 @@
                     <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
                 </div>
             </div>
-            <div class="catalog container">
-                <div class="catalog__left">
-                    <div class="catalog__nav-block">
-                        <input id="menu1" type="radio" name="catalogNav">
-                        <label for="menu1" class="flying-block">
-                            <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="m0 13.75v9.25c0 .552.448 1 1 1h9.25c.552 0 1-.448 1-1v-9.25c0-.552-.448-1-1-1h-9.25c-.552 0-1 .448-1 1z"/>
-                                <path d="m10.25 0h-9.25c-.552 0-1 .448-1 1v9.25c0 .552.448 1 1 1h9.25c.552 0 1-.448 1-1v-9.25c0-.552-.448-1-1-1z"/>
-                                <path d="m13.75 24h9.25c.552 0 1-.448 1-1v-9.25c0-.552-.448-1-1-1h-9.25c-.552 0-1 .448-1 1v9.25c0 .552.448 1 1 1z"/>
-                                <path d="m23 0h-9.25c-.552 0-1 .448-1 1v9.25c0 .552.448 1 1 1h9.25c.552 0 1-.448 1-1v-9.25c0-.552-.448-1-1-1z"/>
+            <div class="container">
+                <div class="catalog">
+                    <div class="catalog__left">
+                        <div class="catalog__nav-block">
+                            <input id="menu1" type="radio" name="catalogNav" checked>
+                            <label for="menu1" class="flying-block">
+                                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m0 13.75v9.25c0 .552.448 1 1 1h9.25c.552 0 1-.448 1-1v-9.25c0-.552-.448-1-1-1h-9.25c-.552 0-1 .448-1 1z"/>
+                                    <path d="m10.25 0h-9.25c-.552 0-1 .448-1 1v9.25c0 .552.448 1 1 1h9.25c.552 0 1-.448 1-1v-9.25c0-.552-.448-1-1-1z"/>
+                                    <path d="m13.75 24h9.25c.552 0 1-.448 1-1v-9.25c0-.552-.448-1-1-1h-9.25c-.552 0-1 .448-1 1v9.25c0 .552.448 1 1 1z"/>
+                                    <path d="m23 0h-9.25c-.552 0-1 .448-1 1v9.25c0 .552.448 1 1 1h9.25c.552 0 1-.448 1-1v-9.25c0-.552-.448-1-1-1z"/>
+                                </svg>
+                                <span class="catalog__title">Мозаика</span>
+                            </label>
+                            <nav class="catalog__menu">
+                                <ul class="catalog__list">
+                                    <li><a href="#">Деревянная мозаика</a></li>
+                                    <li><a href="#">Зеркальная мозаика</a></li>
+                                    <li><a href="#">Для бассейнов</a></li>
+                                    <li><a href="#">Эпоксидна затирка</a></li>
+                                    <li><a href="#">DUNE</a></li>
+                                    <li><a href="#">BISAZZA</a></li>
+                                    <li><a href="#">EZARRI</a></li>
+                                    <li><a href="#">ORRO</a></li>
+                                    <li><a href="#">ALMA</a></li>
+                                    <li><a href="#">ALMA US</a></li>
+                                    <li><a href="#">TOGAMA</a></li>
+                                    <li><a href="#">FABRIZIO ROBERTO</a></li>
+                                    <li><a href="#">PIXEL</a></li>
+                                    <li><a href="#">NS MOSAIC</a></li>
+                                    <li><a href="#">GAUDI CERAMICS</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="catalog__nav-block">
+                            <input id="menu2" type="radio" name="catalogNav">
+                            <label for="menu2" class="flying-block">
+                                <svg viewBox="0 -31 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m286 30c0-16.539062-13.460938-30-30-30s-30 13.460938-30 30 13.460938 30 30 30 30-13.460938 30-30zm0 0"/>
+                                    <path d="m482 390c-16.539062 0-30 13.460938-30 30s13.460938 30 30 30 30-13.460938 30-30-13.460938-30-30-30zm0 0"/>
+                                    <path d="m30 450c16.539062 0 30-13.460938 30-30s-13.460938-30-30-30-30 13.460938-30 30 13.460938 30 30 30zm0 0"/>
+                                    <path d="m241 285c0 8.277344 6.722656 15 15 15s15-6.722656 15-15-6.722656-15-15-15-15 6.722656-15 15zm0 0"/>
+                                    <path d="m460.535156 364.140625-168.234375-286.691406c-6.253906 4.800781-13.5 8.273437-21.300781 10.371093v154.941407c17.421875 6.214843 30 22.707031 30 42.238281 0 2.511719-.34375 4.929688-.742188 7.328125l145.796876 80.027344c4.425781-3.324219 9.230468-6.191407 14.480468-8.214844zm0 0"/>
+                                    <path d="m65.945312 372.355469 145.796876-80.027344c-.398438-2.398437-.742188-4.816406-.742188-7.328125 0-19.53125 12.578125-36.023438 30-42.238281v-154.941407c-7.800781-2.097656-15.046875-5.570312-21.300781-10.371093l-168.234375 286.691406c5.25 2.023437 10.054687 4.890625 14.480468 8.214844zm0 0"/>
+                                    <path d="m422 420c0-8.511719 2.3125-16.296875 5.53125-23.617188l-141.835938-77.835937c-7.945312 7.039063-18.269531 11.453125-29.695312 11.453125s-21.75-4.414062-29.695312-11.453125l-141.835938 77.835937c3.21875 7.320313 5.53125 15.105469 5.53125 23.617188zm0 0"/>
+                                </svg>
+                                <span class="catalog__title">комплектующие</span>
+                            </label>
+                            <nav class="catalog__menu">
+                                <ul class="catalog__list">
+                                    <li><a href="#">Деревянная мозаика</a></li>
+                                    <li><a href="#">Зеркальная мозаика</a></li>
+                                    <li><a href="#">Для бассейнов</a></li>
+                                    <li><a href="#">Эпоксидна затирка</a></li>
+                                    <li><a href="#">DUNE</a></li>
+                                    <li><a href="#">BISAZZA</a></li>
+                                    <li><a href="#">EZARRI</a></li>
+                                    <li><a href="#">ORRO</a></li>
+                                    <li><a href="#">ALMA</a></li>
+                                    <li><a href="#">ALMA US</a></li>
+                                    <li><a href="#">TOGAMA</a></li>
+                                    <li><a href="#">FABRIZIO ROBERTO</a></li>
+                                    <li><a href="#">PIXEL</a></li>
+                                    <li><a href="#">NS MOSAIC</a></li>
+                                    <li><a href="#">GAUDI CERAMICS</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="catalog__nav-block">
+                            <input id="menu3" type="radio" name="catalogNav">
+                            <label for="menu3" class="flying-block">
+                                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m6.266 17.734c-3.76-1.085-6.266-3.221-6.266-5.734 0 6.617 5.383 12 12 12-2.512 0-4.649-2.505-5.734-6.266z"/>
+                                    <path d="m18.232 15.461c2.352-.888 3.768-2.214 3.768-3.461s-1.416-2.573-3.768-3.461c.173 1.093.268 2.252.268 3.461s-.095 2.368-.268 3.461z"/>
+                                    <path d="m16.087 16.087c.261-1.224.413-2.598.413-4.087s-.152-2.863-.413-4.087c-1.224-.261-2.598-.413-4.087-.413s-2.863.152-4.087.413c-.261 1.224-.413 2.598-.413 4.087s.152 2.863.413 4.087c1.224.261 2.598.413 4.087.413s2.863-.152 4.087-.413z"/>
+                                    <path d="m17.734 6.266c3.76 1.085 6.266 3.221 6.266 5.734 0-6.617-5.383-12-12-12 2.512 0 4.649 2.505 5.734 6.266z"/>
+                                    <path d="m6.266 6.266c1.085-3.761 3.222-6.266 5.734-6.266-6.617 0-12 5.383-12 12 0-2.513 2.506-4.649 6.266-5.734z"/>
+                                    <path d="m17.734 17.734c-1.085 3.761-3.222 6.266-5.734 6.266 6.617 0 12-5.383 12-12 0 2.513-2.506 4.649-6.266 5.734z"/>
+                                    <path d="m12 18.5c-1.209 0-2.368-.095-3.461-.268.888 2.352 2.214 3.768 3.461 3.768s2.573-1.416 3.461-3.768c-1.093.173-2.252.268-3.461.268z"/>
+                                    <path d="m15.461 5.768c-.888-2.352-2.214-3.768-3.461-3.768s-2.573 1.416-3.461 3.768c1.093-.173 2.252-.268 3.461-.268s2.368.095 3.461.268z"/>
+                                    <path d="m5.768 8.539c-2.352.888-3.768 2.214-3.768 3.461s1.416 2.573 3.768 3.461c-.173-1.093-.268-2.252-.268-3.461s.095-2.368.268-3.461z"/>
+                                </svg>
+                                <span class="catalog__title">Химия</span>
+                            </label>
+                            <nav class="catalog__menu">
+                                <ul class="catalog__list">
+                                    <li><a href="#">Деревянная мозаика</a></li>
+                                    <li><a href="#">Зеркальная мозаика</a></li>
+                                    <li><a href="#">Для бассейнов</a></li>
+                                    <li><a href="#">Эпоксидна затирка</a></li>
+                                    <li><a href="#">DUNE</a></li>
+                                    <li><a href="#">BISAZZA</a></li>
+                                    <li><a href="#">EZARRI</a></li>
+                                    <li><a href="#">ORRO</a></li>
+                                    <li><a href="#">ALMA</a></li>
+                                    <li><a href="#">ALMA US</a></li>
+                                    <li><a href="#">TOGAMA</a></li>
+                                    <li><a href="#">FABRIZIO ROBERTO</a></li>
+                                    <li><a href="#">PIXEL</a></li>
+                                    <li><a href="#">NS MOSAIC</a></li>
+                                    <li><a href="#">GAUDI CERAMICS</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="catalog__questions flying-block">
+                            <svg viewBox="0 0 58 56" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M58 23.9998V55.9998H4.77002C1.38002 55.9598 0.01 54.5898 0 51.2498V23.9998L1 21.9998L10.5601 15.1997L12.12 16.4497L2.53003 23.3398L29 42.0598L55.47 23.3398L45.88 16.4497L47.4399 15.1997L57 21.9998L58 23.9998ZM56 25.4097C55.19 25.9897 54.16 26.7398 53 27.5698C46.91 31.9598 36.81 39.1897 32.04 42.4597C31.8174 42.6141 31.6037 42.781 31.4 42.9597C31.088 43.2824 30.7154 43.5403 30.3036 43.7188C29.8918 43.8972 29.4488 43.9927 29 43.9998C28.5539 44.0001 28.1125 43.9089 27.7031 43.7317C27.2937 43.5545 26.9251 43.2952 26.62 42.9697C26.436 42.8111 26.2423 42.6643 26.04 42.5298C21.33 39.2598 11.14 31.9598 5 27.5598C3.84 26.7298 2.8 25.9797 2 25.4097V50.9998C2.00208 51.3762 2.07322 51.7491 2.20996 52.0999C3.00996 51.4199 3.99999 50.5699 5.10999 49.6199C8.30999 46.8699 12.5801 43.2198 16.5601 39.7998L18.3199 41.0398L6.70996 50.9697L3.59998 53.6396C4.03032 53.872 4.51097 53.9957 5 53.9998H53C53.489 53.9957 53.9697 53.872 54.4 53.6396L51.29 50.9697L39.6801 41.0398L41.4399 39.7998C45.4199 43.2198 49.69 46.8699 52.89 49.6199C54 50.5699 54.99 51.4199 55.78 52.0999C55.9248 51.7512 55.9995 51.3773 56 50.9998V25.4097V25.4097ZM53.23 55.9998H58V51.2297C57.99 54.5797 56.63 55.9598 53.23 55.9998ZM31 28.9998C31 29.3953 30.8827 29.7819 30.663 30.1108C30.4432 30.4397 30.1308 30.696 29.7654 30.8474C29.3999 30.9988 28.9978 31.0386 28.6099 30.9614C28.2219 30.8843 27.8655 30.6938 27.5858 30.4141C27.3061 30.1344 27.1156 29.7779 27.0385 29.3899C26.9613 29.0019 27.0008 28.5998 27.1522 28.2344C27.3036 27.8689 27.56 27.5567 27.8889 27.3369C28.2178 27.1172 28.6044 26.9998 29 26.9998C29.5299 27.0013 30.0377 27.2127 30.4125 27.5874C30.7872 27.9621 30.9984 28.4698 31 28.9998ZM34.28 14.6897C30.77 18.1997 30.09 17.7898 30 21.9998C30 22.265 29.8947 22.5193 29.7072 22.7068C29.5196 22.8943 29.2652 22.9998 29 22.9998C28.7348 22.9998 28.4804 22.8943 28.2928 22.7068C28.1053 22.5193 28 22.265 28 21.9998C28.01 17.5898 29.2 16.5398 32.76 13.3198C34.3 11.8598 35.99 10.0399 36.01 7.86987C36.04 3.70987 32.59 1.96971 29.37 1.94971C25.3 1.91971 23.09 3.79985 22.3 7.09985C22.0987 7.71297 21.9973 8.35442 22 8.99976V8.99976C21.9792 9.24701 21.8673 9.47766 21.6859 9.64697C21.5045 9.81629 21.2666 9.91228 21.0186 9.91602C20.7705 9.91976 20.5299 9.83101 20.3435 9.66724C20.1571 9.50347 20.0382 9.2763 20.01 9.02979H19.99C19.9743 7.98455 20.1823 6.94801 20.6 5.98975C21.84 2.31975 24.94 0.00976562 29.49 0.00976562C34.14 0.00976562 37.99 2.89975 37.99 7.73975C37.99 10.8797 36.42 12.6797 34.28 14.6897Z"
+                                      fill="black"/>
+                                <path d="M5 27L28.9399 43L53 27V51H5V27Z" fill="black"/>
                             </svg>
-                            <span>Мозаика</span>
-                        </label>
-                        <nav class="catalog__menu">
-                            <ul class="catalog__list">
-                                <li><a href="#">Деревянная мозаика</a></li>
-                                <li><a href="#">Зеркальная мозаика</a></li>
-                                <li><a href="#">Для бассейнов</a></li>
-                                <li><a href="#">Эпоксидна затирка</a></li>
-                                <li><a href="#">DUNE</a></li>
-                                <li><a href="#">BISAZZA</a></li>
-                                <li><a href="#">EZARRI</a></li>
-                                <li><a href="#">ORRO</a></li>
-                                <li><a href="#">ALMA</a></li>
-                                <li><a href="#">ALMA US</a></li>
-                                <li><a href="#">TOGAMA</a></li>
-                                <li><a href="#">FABRIZIO ROBERTO</a></li>
-                                <li><a href="#">PIXEL</a></li>
-                                <li><a href="#">NS MOSAIC</a></li>
-                                <li><a href="#">GAUDI CERAMICS</a></li>
-                            </ul>
-                        </nav>
+                            <p class="catalog__title">остались вопросы?</p>
+                            <p class="catalog__subtitle">Наши специалисты ответят на&nbsp;любые ваши вопросы</p>
+                            <button class="catalog__button catalog__button_big yellow-button" data-text="Задать вопрос">
+                                <span>Задать вопрос</span></button>
+                        </div>
                     </div>
-                    <div class="catalog__questions">
-
+                    <div class="catalog__right">
+                        <div class="catalog__items">
+                            <div class="catalog__item catalog-item">
+                                <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
+                                <div class="catalog-item__block flying-block">
+                                    <h3 class="catalog-item__name">стеклянная мозаика</h3>
+                                    <div class="catalog-item__info">
+                                        <span>Производитель:</span>
+                                        <span class="catalog-item__maker">gaudi ceramics</span>
+                                    </div>
+                                    <button class="catalog__button yellow-button popup-project-open-btn" data-text="Подробнее">
+                                        <span>Подробнее</span></button>
+                                </div>
+                            </div>
+                            <div class="catalog__item catalog-item">
+                                <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
+                                <div class="catalog-item__block flying-block">
+                                    <h3 class="catalog-item__name">стеклянная мозаика</h3>
+                                    <div class="catalog-item__info">
+                                        <span>Производитель:</span>
+                                        <span class="catalog-item__maker">gaudi ceramics</span>
+                                    </div>
+                                    <button class="catalog__button yellow-button popup-project-open-btn" data-text="Подробнее">
+                                        <span>Подробнее</span></button>
+                                </div>
+                            </div>
+                            <div class="catalog__item catalog-item">
+                                <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
+                                <div class="catalog-item__block flying-block">
+                                    <h3 class="catalog-item__name">стеклянная мозаика</h3>
+                                    <div class="catalog-item__info">
+                                        <span>Производитель:</span>
+                                        <span class="catalog-item__maker">gaudi ceramics</span>
+                                    </div>
+                                    <button class="catalog__button yellow-button popup-project-open-btn" data-text="Подробнее">
+                                        <span>Подробнее</span></button>
+                                </div>
+                            </div>
+                            <div class="catalog__item catalog-item">
+                                <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
+                                <div class="catalog-item__block flying-block">
+                                    <h3 class="catalog-item__name">стеклянная мозаика</h3>
+                                    <div class="catalog-item__info">
+                                        <span>Производитель:</span>
+                                        <span class="catalog-item__maker">gaudi ceramics</span>
+                                    </div>
+                                    <button class="catalog__button yellow-button popup-project-open-btn" data-text="Подробнее">
+                                        <span>Подробнее</span></button>
+                                </div>
+                            </div>
+                            <div class="catalog__item catalog-item">
+                                <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
+                                <div class="catalog-item__block flying-block">
+                                    <h3 class="catalog-item__name">стеклянная мозаика</h3>
+                                    <div class="catalog-item__info">
+                                        <span>Производитель:</span>
+                                        <span class="catalog-item__maker">gaudi ceramics</span>
+                                    </div>
+                                    <button class="catalog__button yellow-button popup-project-open-btn" data-text="Подробнее">
+                                        <span>Подробнее</span></button>
+                                </div>
+                            </div>
+                            <div class="catalog__item catalog-item">
+                                <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
+                                <div class="catalog-item__block flying-block">
+                                    <h3 class="catalog-item__name">стеклянная мозаика</h3>
+                                    <div class="catalog-item__info">
+                                        <span>Производитель:</span>
+                                        <span class="catalog-item__maker">gaudi ceramics</span>
+                                    </div>
+                                    <button class="catalog__button yellow-button popup-project-open-btn" data-text="Подробнее">
+                                        <span>Подробнее</span></button>
+                                </div>
+                            </div>
+                            <div class="catalog__item catalog-item">
+                                <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
+                                <div class="catalog-item__block flying-block">
+                                    <h3 class="catalog-item__name">стеклянная мозаика</h3>
+                                    <div class="catalog-item__info">
+                                        <span>Производитель:</span>
+                                        <span class="catalog-item__maker">gaudi ceramics</span>
+                                    </div>
+                                    <button class="catalog__button yellow-button popup-project-open-btn" data-text="Подробнее">
+                                        <span>Подробнее</span></button>
+                                </div>
+                            </div>
+                            <div class="catalog__item catalog-item">
+                                <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
+                                <div class="catalog-item__block flying-block">
+                                    <h3 class="catalog-item__name">стеклянная мозаика</h3>
+                                    <div class="catalog-item__info">
+                                        <span>Производитель:</span>
+                                        <span class="catalog-item__maker">gaudi ceramics</span>
+                                    </div>
+                                    <button class="catalog__button yellow-button popup-project-open-btn" data-text="Подробнее">
+                                        <span>Подробнее</span></button>
+                                </div>
+                            </div>
+                            <div class="catalog__item catalog-item">
+                                <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
+                                <div class="catalog-item__block flying-block">
+                                    <h3 class="catalog-item__name">стеклянная мозаика</h3>
+                                    <div class="catalog-item__info">
+                                        <span>Производитель:</span>
+                                        <span class="catalog-item__maker">gaudi ceramics</span>
+                                    </div>
+                                    <button class="catalog__button yellow-button popup-project-open-btn" data-text="Подробнее">
+                                        <span>Подробнее</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="catalog__pagination">
+                          <li><a href="#" class="reversed">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve"><path d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734 L107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8 C342.889,227.058,342.889,216.255,336.226,209.591z"/></svg></a></li>
+                          <li><a href="#" class="catalog__active-link">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li>...</li>
+                          <li><a href="#">29</a></li>
+                          <li><a href="#">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve"><path d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734 L107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8 C342.889,227.058,342.889,216.255,336.226,209.591z"/></svg></a></li>
+                        </div>
                     </div>
-                </div>
-                <div class="catalog__right">
-
                 </div>
             </div>
             <div class="seo container">
                 <h2>Заголовок текста</h2>
-                <p>Равным образом начало повседневной работы по формированию позиции требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что укрепление и развитие структуры играет важную роль в формировании соответствующий условий активизации.</p>
-                <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание дальнейших направлений развития. Не следует, однако забывать, что рамки и место обучения кадров способствует подготовки и реализации модели развития. Повседневная практика показывает, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.</p>
+                <p>Равным образом начало повседневной работы по формированию позиции требуют от нас анализа позиций,
+                    занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что
+                    укрепление и развитие структуры играет важную роль в формировании соответствующий условий
+                    активизации.</p>
+                <p>Значимость этих проблем настолько очевидна, что укрепление и развитие структуры обеспечивает широкому
+                    кругу (специалистов) участие в формировании соответствующий условий активизации. Равным образом
+                    постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени
+                    обуславливает создание дальнейших направлений развития. Не следует, однако забывать, что рамки и
+                    место обучения кадров способствует подготовки и реализации модели развития. Повседневная практика
+                    показывает, что начало повседневной работы по формированию позиции представляет собой интересный
+                    эксперимент проверки системы обучения кадров, соответствует насущным потребностям.</p>
             </div>
         </div>
 <footer class="footer">

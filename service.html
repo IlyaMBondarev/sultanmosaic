@@ -15,7 +15,50 @@
 <body>
 <div class="wrapper">
     <main class="page">
-        <div class="first-screen">
+<div class="popup-callback-bg">
+    <div class="popup-callback">
+        <button class="popup-callback__close">+</button>
+        <p class="popup-callback__title">Заполните форму ниже</p>
+        <p class="popup-callback__subtitle">и&nbsp;мы свяжемся с&nbsp;Вами в&nbsp;ближайшее время</p>
+        <form action="#" class="popup-callback__form" id="popupCallbackForm">
+            <div class="popup-callback__block">
+                <label for="popupCallbackName">Ваше имя:
+                    <input id="popupCallbackName" type="text" placeholder="Анастасия" class="_req">
+                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                </label></div>
+            <div class="popup-callback__block">
+                <label for="popupCallbackPhone">Телефон:
+                    <input id="popupCallbackPhone" type="tel" placeholder="+7 (926) 000-00-00"
+                           class="_req _phone masked">
+                    <span class="input-error">Номер введен неверно!</span>
+                </label></div>
+            <button class="popup-callback__button yellow-button" type="submit" data-text="Оставить заявку"><span>Оставить заявку</span></button>
+            <p class="popup-callback__small-content">* Нажимая кнопку действия, вы соглашаетесь с&nbsp;<a href="#">пользовательским соглашением</a>.</p>
+        </form>
+    </div>
+</div>
+<div class="popup-callback-bg-estimate">
+    <div class="popup-callback">
+        <button class="popup-callback__close">+</button>
+        <p class="popup-callback__title">Заполните форму ниже</p>
+        <p class="popup-callback__subtitle">и&nbsp;мы свяжемся с&nbsp;Вами для&nbsp;уточнения всех деталей</p>
+        <form action="#" class="popup-callback__form" id="popupEstimateForm">
+            <div class="popup-callback__block">
+                <label for="popupEstimateName">Ваше имя:
+                    <input id="popupEstimateName" type="text" placeholder="Анастасия" class="_req">
+                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                </label></div>
+            <div class="popup-callback__block">
+                <label for="popupEstimatePhone">Телефон:
+                    <input id="popupEstimatePhone" type="tel" placeholder="+7 (926) 000-00-00"
+                           class="_req _phone masked">
+                    <span class="input-error">Номер введен неверно!</span>
+                </label></div>
+            <button class="popup-callback__button yellow-button" type="submit" data-text="Оставить заявку"><span>Оставить заявку</span></button>
+            <p class="popup-callback__small-content">* Нажимая кнопку действия, вы соглашаетесь с&nbsp;<a href="#">пользовательским соглашением</a>.</p>
+        </form>
+    </div>
+</div>        <div class="first-screen">
 <header class="header container">
     <div class="header__top">
         <div class="header__logo logo">
@@ -30,7 +73,7 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <button class="header__callback-btn slide-in">
+        <button class="header__callback-btn slide-in popup-callback-open-btn">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.942 53.942" style="enable-background:new 0 0 53.942 53.942;" xml:space="preserve">
                 <path d="M53.364,40.908c-2.008-3.796-8.981-7.912-9.288-8.092c-0.896-0.51-1.831-0.78-2.706-0.78c-1.301,0-2.366,0.596-3.011,1.68
                     c-1.02,1.22-2.285,2.646-2.592,2.867c-2.376,1.612-4.236,1.429-6.294-0.629L17.987,24.467c-2.045-2.045-2.233-3.928-0.632-6.291
@@ -267,12 +310,12 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-slider container">
+            <div class="carousel-slider container portfolio-items">
                 <div class="carousel-slider__top">
                     <p class="carousel-slider__title">Вас так же может заинтересовать</p>
-                    <div class="carousel-slider__arrows owl-nav">
-                        <button class="carousel-slider__arrow carousel-slider__arrow-left" type="button" role="presentation"><img src="img/Услуга/arrow-left.png" alt="left"></button>
-                        <button class="carousel-slider__arrow carousel-slider__arrow-right" type="button" role="presentation"><img src="img/Услуга/arrow-right.png" alt="right"></button>
+                    <div class="carousel-slider__arrows">
+                        <button class="carousel-slider__arrow carousel-slider__arrow-left portfolio-items-carousel-slider__arrow-left" type="button" role="presentation"><img src="img/Услуга/arrow-left.png" alt="left"></button>
+                        <button class="carousel-slider__arrow carousel-slider__arrow-right portfolio-items-carousel-slider__arrow-right" type="button" role="presentation"><img src="img/Услуга/arrow-right.png" alt="right"></button>
                     </div>
                 </div>
                 <div class="carousel-slider__slides owl-carousel">
@@ -477,7 +520,7 @@
                         <span>30 мин</span>
                         <p>Сдаем объект и&nbsp;заключаем договор на&nbsp;сервисное обслуживание</p>
                     </div>
-                    <button class="scheme__estimate-btn"><span>расчитать</span> смету онлайн</button>
+                    <button class="scheme__estimate-btn popup-callback-estimate-open-btn"><span>расчитать</span> смету онлайн</button>
                 </div>
             </div>
             <div class="full-portfolio">

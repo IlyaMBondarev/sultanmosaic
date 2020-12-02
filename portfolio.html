@@ -7,11 +7,130 @@
     <title>Портфолио</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
     <main class="page">
+<div class="popup-callback-bg">
+    <div class="popup-callback">
+        <button class="popup-callback__close">+</button>
+        <p class="popup-callback__title">Заполните форму ниже</p>
+        <p class="popup-callback__subtitle">и&nbsp;мы свяжемся с&nbsp;Вами в&nbsp;ближайшее время</p>
+        <form action="#" class="popup-callback__form" id="popupCallbackForm">
+            <div class="popup-callback__block">
+                <label for="popupCallbackName">Ваше имя:
+                    <input id="popupCallbackName" type="text" placeholder="Анастасия" class="_req">
+                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                </label></div>
+            <div class="popup-callback__block">
+                <label for="popupCallbackPhone">Телефон:
+                    <input id="popupCallbackPhone" type="tel" placeholder="+7 (926) 000-00-00"
+                           class="_req _phone masked">
+                    <span class="input-error">Номер введен неверно!</span>
+                </label></div>
+            <button class="popup-callback__button yellow-button" type="submit" data-text="Оставить заявку"><span>Оставить заявку</span></button>
+            <p class="popup-callback__small-content">* Нажимая кнопку действия, вы соглашаетесь с&nbsp;<a href="#">пользовательским соглашением</a>.</p>
+        </form>
+    </div>
+</div>
+<div class="popup-callback-bg-estimate">
+    <div class="popup-callback">
+        <button class="popup-callback__close">+</button>
+        <p class="popup-callback__title">Заполните форму ниже</p>
+        <p class="popup-callback__subtitle">и&nbsp;мы свяжемся с&nbsp;Вами для&nbsp;уточнения всех деталей</p>
+        <form action="#" class="popup-callback__form" id="popupEstimateForm">
+            <div class="popup-callback__block">
+                <label for="popupEstimateName">Ваше имя:
+                    <input id="popupEstimateName" type="text" placeholder="Анастасия" class="_req">
+                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                </label></div>
+            <div class="popup-callback__block">
+                <label for="popupEstimatePhone">Телефон:
+                    <input id="popupEstimatePhone" type="tel" placeholder="+7 (926) 000-00-00"
+                           class="_req _phone masked">
+                    <span class="input-error">Номер введен неверно!</span>
+                </label></div>
+            <button class="popup-callback__button yellow-button" type="submit" data-text="Оставить заявку"><span>Оставить заявку</span></button>
+            <p class="popup-callback__small-content">* Нажимая кнопку действия, вы соглашаетесь с&nbsp;<a href="#">пользовательским соглашением</a>.</p>
+        </form>
+    </div>
+</div>        <div class="popup-project-bg">
+            <div class="popup-project popup-project-description">
+                <button class="popup-project__close">+</button>
+                <div class="popup-project__left">
+                    <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img src="img/Услуга/arrow-left.png" alt="left"></button>
+                    <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img src="img/Услуга/arrow-right.png" alt="right"></button>
+                    <div class="owl-carousel">
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_2.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_3.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_4.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_5.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_2.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_3.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_4.jpg" alt="">
+                        </div>
+                        <div class="popup-project__image">
+                            <img src="img/Портфолио/photo_5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-project__info">
+                    <h3 class="popup-project__title">Отель De La Mapa Resort</h3>
+                    <div class="popup-project__subtitle">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path d="M256,0C156.011,0,74.667,81.344,74.667,181.333c0,96.725,165.781,317.099,172.843,326.443
+                                            c1.984,2.667,5.163,4.224,8.491,4.224c3.328,0,6.507-1.557,8.491-4.224c7.061-9.344,172.843-229.717,172.843-326.443
+                                            C437.333,81.344,355.989,0,256,0z M256,277.333c-52.928,0-96-43.072-96-96c0-52.928,43.072-96,96-96s96,43.072,96,96
+                                            C352,234.261,308.928,277.333,256,277.333z"/>
+                                </svg>
+                        <p>Краснодарский край, г.&nbsp;Анапа ул.&nbsp;Протапова,&nbsp;102</p>
+                    </div>
+                    <div class="popup-project__name">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path d="M256,0C114.837,0,0,114.843,0,256s114.837,256,256,256s256-114.843,256-256S397.163,0,256,0z M376.239,227.501
+                                            L257.348,346.391c-13.043,13.043-34.174,13.044-47.218,0l-68.804-68.804c-13.044-13.038-13.044-34.179,0-47.218
+                                            c13.044-13.044,34.174-13.044,47.218,0l45.195,45.19l95.282-95.278c13.044-13.044,34.174-13.044,47.218,0
+                                            C389.283,193.321,389.283,214.462,376.239,227.501z"/>
+                                </svg>
+                        <p>Строительство бассейна</p>
+                    </div>
+                    <p class="popup-project__description">Задача организации, в&nbsp;особенности&nbsp;же реализация намеченных плановых заданий в&nbsp;значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в&nbsp;особенности&nbsp;же начало повседневной работы по&nbsp;формированию позиции требуют определения и&nbsp;уточнения системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а&nbsp;также постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и&nbsp;уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в&nbsp;особенности&nbsp;же реализация намеченных плановых заданий в&nbsp;значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Задача организации, в&nbsp;особенности&nbsp;же начало повседневной работы по&nbsp;формированию позиции требуют определения и&nbsp;уточнения системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а&nbsp;также постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и&nbsp;уточнения системы обучения кадров, соответствует насущным потребностям.</p>
+                </div>
+                <form class="popup-project__form" id="popupProjectForm">
+                    <div class="popup-project__block">
+                        <label for="popupProjectName">
+                            <input id="popupProjectName" type="text" placeholder="Ваше Имя" class="_req">
+                            <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                        </label>
+                    </div>
+                    <div class="popup-project__block">
+                        <label for="popupProjectPhone">
+                            <input id="popupProjectPhone" type="tel" placeholder="Ваш Телефон"
+                                   class="_req _phone masked">
+                            <span class="input-error">Номер введен неверно!</span>
+                        </label>
+                    </div>
+                    <button class="popup-project__button yellow-button" type="submit" data-text="Хочу также"><span>Хочу также</span></button>
+                </form>
+            </div>
+        </div>
         <div class="first-screen">
 <header class="header container">
     <div class="header__top">
@@ -27,7 +146,7 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <button class="header__callback-btn slide-in">
+        <button class="header__callback-btn slide-in popup-callback-open-btn">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.942 53.942" style="enable-background:new 0 0 53.942 53.942;" xml:space="preserve">
                 <path d="M53.364,40.908c-2.008-3.796-8.981-7.912-9.288-8.092c-0.896-0.51-1.831-0.78-2.706-0.78c-1.301,0-2.366,0.596-3.011,1.68
                     c-1.02,1.22-2.285,2.646-2.592,2.867c-2.376,1.612-4.236,1.429-6.294-0.629L17.987,24.467c-2.045-2.045-2.233-3.928-0.632-6.291
@@ -140,7 +259,562 @@
                     <a href="catalog.html" class="breadcrumbs__link">Портфолио</a>
                 </div>
             </div>
-            <div class="projects"></div>
+            <div class="carousel-slider container projects">
+                <div class="carousel-slider__top">
+                    <div class="carousel-slider__slides owl-carousel">
+                        <div class="projects__slide">
+                            <div class="projects__titles">
+                                <div class="projects__number"><span>01</span></div>
+                                <div class="projects__info">
+                                    <h2 class="projects__title">Отель De la Mapa Resort</h2>
+                                    <p class="projects__subtitle">Краснодарский край, г.&nbsp;Анапа, ул.&nbsp;Протапова,&nbsp;102</p>
+                                </div>
+                            </div>
+                            <div class="projects__companies">
+                                <img src="img/Портфолио/logo_1.jpg" alt="">
+                                <img src="img/Портфолио/logo_2.jpg" alt="">
+                                <img src="img/Портфолио/logo_3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="projects__slide">
+                            <div class="projects__titles">
+                                <div class="projects__number"><span>02</span></div>
+                                <div class="projects__info">
+                                    <h2 class="projects__title">Отель De la Mapa Resort</h2>
+                                    <p class="projects__subtitle">Краснодарский край, г.&nbsp;Анапа, ул.&nbsp;Протапова,&nbsp;102</p>
+                                </div>
+                            </div>
+                            <div class="projects__companies">
+                                <img src="img/Портфолио/logo_1.jpg" alt="">
+                                <img src="img/Портфолио/logo_2.jpg" alt="">
+                                <img src="img/Портфолио/logo_3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="projects__slide">
+                            <div class="projects__titles">
+                                <div class="projects__number"><span>03</span></div>
+                                <div class="projects__info">
+                                    <h2 class="projects__title">Отель De la Mapa Resort</h2>
+                                    <p class="projects__subtitle">Краснодарский край, г.&nbsp;Анапа, ул.&nbsp;Протапова,&nbsp;102</p>
+                                </div>
+                            </div>
+                            <div class="projects__companies">
+                                <img src="img/Портфолио/logo_1.jpg" alt="">
+                                <img src="img/Портфолио/logo_2.jpg" alt="">
+                                <img src="img/Портфолио/logo_3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="projects__slide">
+                            <div class="projects__titles">
+                                <div class="projects__number"><span>04</span></div>
+                                <div class="projects__info">
+                                    <h2 class="projects__title">Отель De la Mapa Resort</h2>
+                                    <p class="projects__subtitle">Краснодарский край, г.&nbsp;Анапа, ул.&nbsp;Протапова,&nbsp;102</p>
+                                </div>
+                            </div>
+                            <div class="projects__companies">
+                                <img src="img/Портфолио/logo_1.jpg" alt="">
+                                <img src="img/Портфолио/logo_2.jpg" alt="">
+                                <img src="img/Портфолио/logo_3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="projects__slide">
+                            <div class="projects__titles">
+                                <div class="projects__number"><span>05</span></div>
+                                <div class="projects__info">
+                                    <h2 class="projects__title">Отель De la Mapa Resort</h2>
+                                    <p class="projects__subtitle">Краснодарский край, г.&nbsp;Анапа, ул.&nbsp;Протапова,&nbsp;102</p>
+                                </div>
+                            </div>
+                            <div class="projects__companies">
+                                <img src="img/Портфолио/logo_1.jpg" alt="">
+                                <img src="img/Портфолио/logo_2.jpg" alt="">
+                                <img src="img/Портфолио/logo_3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="projects__slide">
+                            <div class="projects__titles">
+                                <div class="projects__number"><span>06</span></div>
+                                <div class="projects__info">
+                                    <h2 class="projects__title">Отель De la Mapa Resort</h2>
+                                    <p class="projects__subtitle">Краснодарский край, г.&nbsp;Анапа, ул.&nbsp;Протапова,&nbsp;102</p>
+                                </div>
+                            </div>
+                            <div class="projects__companies">
+                                <img src="img/Портфолио/logo_1.jpg" alt="">
+                                <img src="img/Портфолио/logo_2.jpg" alt="">
+                                <img src="img/Портфолио/logo_3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="projects__slide">
+                            <div class="projects__titles">
+                                <div class="projects__number"><span>07</span></div>
+                                <div class="projects__info">
+                                    <h2 class="projects__title">Отель De la Mapa Resort</h2>
+                                    <p class="projects__subtitle">Краснодарский край, г.&nbsp;Анапа, ул.&nbsp;Протапова,&nbsp;102</p>
+                                </div>
+                            </div>
+                            <div class="projects__companies">
+                                <img src="img/Портфолио/logo_1.jpg" alt="">
+                                <img src="img/Портфолио/logo_2.jpg" alt="">
+                                <img src="img/Портфолио/logo_3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="projects__slide">
+                            <div class="projects__titles">
+                                <div class="projects__number"><span>08</span></div>
+                                <div class="projects__info">
+                                    <h2 class="projects__title">Отель De la Mapa Resort</h2>
+                                    <p class="projects__subtitle">Краснодарский край, г.&nbsp;Анапа, ул.&nbsp;Протапова,&nbsp;102</p>
+                                </div>
+                            </div>
+                            <div class="projects__companies">
+                                <img src="img/Портфолио/logo_1.jpg" alt="">
+                                <img src="img/Портфолио/logo_2.jpg" alt="">
+                                <img src="img/Портфолио/logo_3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slider__arrows projects__arrows">
+                        <button class="carousel-slider__arrow carousel-slider__arrow-left projects-carousel-slider__arrow-left" type="button" role="presentation"><img src="img/Услуга/arrow-left.png" alt="left"></button>
+                        <button class="carousel-slider__arrow carousel-slider__arrow-right projects-carousel-slider__arrow-right" type="button" role="presentation"><img src="img/Услуга/arrow-right.png" alt="right"></button>
+                    </div>
+                </div>
+                <div class="carousel-slider__slides owl-carousel">
+                    <div class="projects__item projects-item">
+                        <div class="projects-item__column">
+                            <div class="projects-item__block projects-item__block_big">
+                                <div class="projects__name">
+                                    <h3>Строительство бассейна</h3>
+                                    <button class="link-with-arrow popup-project-open-btn">
+                                        <span>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                 xml:space="preserve">
+                                                <polygon
+                                                        points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                            </svg>
+                                        </span>
+                                        Смотреть все фото</button>
+                                </div>
+                                <img src="img/Портфолио/photo_2.jpg" alt="" class="projects-item__bg">
+                            </div>
+                        </div>
+                        <div class="projects-item__column">
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_3.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_5.jpg" alt="" class="projects-item__bg">
+                                </div>
+                            </div>
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_4.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block first-screen__block_last">
+                                    <div class="projects-item__desc-block">
+                                        <p class="projects-item__desc-title">подробнее о&nbsp;проекте</p>
+                                        <p class="projects-item__desc-content">Небольшой текст, призывающий
+                                            перейти в&nbsp;полное описание проекта</p>
+                                        <button class="projects-item__desc-open-btn link-with-arrow popup-project-open-btn">
+                                            <span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                     xml:space="preserve">
+                                                    <polygon
+                                                            points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                                </svg>
+                                            </span> смотреть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__item projects-item">
+                        <div class="projects-item__column">
+                            <div class="projects-item__block projects-item__block_big">
+                                <div class="projects__name">
+                                    <h3>Строительство бассейна</h3>
+                                    <button class="link-with-arrow popup-project-open-btn">
+                                        <span>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                 xml:space="preserve">
+                                                <polygon
+                                                        points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                            </svg>
+                                        </span>
+                                        Смотреть все фото</button>
+                                </div>
+                                <img src="img/Портфолио/photo_2.jpg" alt="" class="projects-item__bg">
+                            </div>
+                        </div>
+                        <div class="projects-item__column">
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_3.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_5.jpg" alt="" class="projects-item__bg">
+                                </div>
+                            </div>
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_4.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block first-screen__block_last">
+                                    <div class="projects-item__desc-block">
+                                        <p class="projects-item__desc-title">подробнее о&nbsp;проекте</p>
+                                        <p class="projects-item__desc-content">Небольшой текст, призывающий
+                                            перейти в&nbsp;полное описание проекта</p>
+                                        <button class="projects-item__desc-open-btn link-with-arrow popup-project-open-btn">
+                                            <span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                     xml:space="preserve">
+                                                    <polygon
+                                                            points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                                </svg>
+                                            </span> смотреть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__item projects-item">
+                        <div class="projects-item__column">
+                            <div class="projects-item__block projects-item__block_big">
+                                <div class="projects__name">
+                                    <h3>Строительство бассейна</h3>
+                                    <button class="link-with-arrow popup-project-open-btn">
+                                        <span>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                 xml:space="preserve">
+                                                <polygon
+                                                        points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                            </svg>
+                                        </span>
+                                        Смотреть все фото</button>
+                                </div>
+                                <img src="img/Портфолио/photo_2.jpg" alt="" class="projects-item__bg">
+                            </div>
+                        </div>
+                        <div class="projects-item__column">
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_3.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_5.jpg" alt="" class="projects-item__bg">
+                                </div>
+                            </div>
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_4.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block first-screen__block_last">
+                                    <div class="projects-item__desc-block">
+                                        <p class="projects-item__desc-title">подробнее о&nbsp;проекте</p>
+                                        <p class="projects-item__desc-content">Небольшой текст, призывающий
+                                            перейти в&nbsp;полное описание проекта</p>
+                                        <button class="projects-item__desc-open-btn link-with-arrow popup-project-open-btn">
+                                            <span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                     xml:space="preserve">
+                                                    <polygon
+                                                            points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                                </svg>
+                                            </span> смотреть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__item projects-item">
+                        <div class="projects-item__column">
+                            <div class="projects-item__block projects-item__block_big">
+                                <div class="projects__name">
+                                    <h3>Строительство бассейна</h3>
+                                    <button class="link-with-arrow popup-project-open-btn">
+                                        <span>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                 xml:space="preserve">
+                                                <polygon
+                                                        points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                            </svg>
+                                        </span>
+                                        Смотреть все фото</button>
+                                </div>
+                                <img src="img/Портфолио/photo_2.jpg" alt="" class="projects-item__bg">
+                            </div>
+                        </div>
+                        <div class="projects-item__column">
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_3.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_5.jpg" alt="" class="projects-item__bg">
+                                </div>
+                            </div>
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_4.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block first-screen__block_last">
+                                    <div class="projects-item__desc-block">
+                                        <p class="projects-item__desc-title">подробнее о&nbsp;проекте</p>
+                                        <p class="projects-item__desc-content">Небольшой текст, призывающий
+                                            перейти в&nbsp;полное описание проекта</p>
+                                        <button class="projects-item__desc-open-btn link-with-arrow popup-project-open-btn">
+                                            <span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                     xml:space="preserve">
+                                                    <polygon
+                                                            points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                                </svg>
+                                            </span> смотреть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__item projects-item">
+                        <div class="projects-item__column">
+                            <div class="projects-item__block projects-item__block_big">
+                                <div class="projects__name">
+                                    <h3>Строительство бассейна</h3>
+                                    <button class="link-with-arrow popup-project-open-btn">
+                                        <span>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                 xml:space="preserve">
+                                                <polygon
+                                                        points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                            </svg>
+                                        </span>
+                                        Смотреть все фото</button>
+                                </div>
+                                <img src="img/Портфолио/photo_2.jpg" alt="" class="projects-item__bg">
+                            </div>
+                        </div>
+                        <div class="projects-item__column">
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_3.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_5.jpg" alt="" class="projects-item__bg">
+                                </div>
+                            </div>
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_4.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block first-screen__block_last">
+                                    <div class="projects-item__desc-block">
+                                        <p class="projects-item__desc-title">подробнее о&nbsp;проекте</p>
+                                        <p class="projects-item__desc-content">Небольшой текст, призывающий
+                                            перейти в&nbsp;полное описание проекта</p>
+                                        <button class="projects-item__desc-open-btn link-with-arrow popup-project-open-btn">
+                                            <span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                     xml:space="preserve">
+                                                    <polygon
+                                                            points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                                </svg>
+                                            </span> смотреть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__item projects-item">
+                        <div class="projects-item__column">
+                            <div class="projects-item__block projects-item__block_big">
+                                <div class="projects__name">
+                                    <h3>Строительство бассейна</h3>
+                                    <button class="link-with-arrow popup-project-open-btn">
+                                        <span>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                 xml:space="preserve">
+                                                <polygon
+                                                        points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                            </svg>
+                                        </span>
+                                        Смотреть все фото</button>
+                                </div>
+                                <img src="img/Портфолио/photo_2.jpg" alt="" class="projects-item__bg">
+                            </div>
+                        </div>
+                        <div class="projects-item__column">
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_3.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_5.jpg" alt="" class="projects-item__bg">
+                                </div>
+                            </div>
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_4.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block first-screen__block_last">
+                                    <div class="projects-item__desc-block">
+                                        <p class="projects-item__desc-title">подробнее о&nbsp;проекте</p>
+                                        <p class="projects-item__desc-content">Небольшой текст, призывающий
+                                            перейти в&nbsp;полное описание проекта</p>
+                                        <button class="projects-item__desc-open-btn link-with-arrow popup-project-open-btn">
+                                            <span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                     xml:space="preserve">
+                                                    <polygon
+                                                            points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                                </svg>
+                                            </span> смотреть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__item projects-item">
+                        <div class="projects-item__column">
+                            <div class="projects-item__block projects-item__block_big">
+                                <div class="projects__name">
+                                    <h3>Строительство бассейна</h3>
+                                    <button class="link-with-arrow popup-project-open-btn">
+                                        <span>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                 xml:space="preserve">
+                                                <polygon
+                                                        points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                            </svg>
+                                        </span>
+                                        Смотреть все фото</button>
+                                </div>
+                                <img src="img/Портфолио/photo_2.jpg" alt="" class="projects-item__bg">
+                            </div>
+                        </div>
+                        <div class="projects-item__column">
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_3.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_5.jpg" alt="" class="projects-item__bg">
+                                </div>
+                            </div>
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_4.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block first-screen__block_last">
+                                    <div class="projects-item__desc-block">
+                                        <p class="projects-item__desc-title">подробнее о&nbsp;проекте</p>
+                                        <p class="projects-item__desc-content">Небольшой текст, призывающий
+                                            перейти в&nbsp;полное описание проекта</p>
+                                        <button class="projects-item__desc-open-btn link-with-arrow popup-project-open-btn">
+                                            <span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                     xml:space="preserve">
+                                                    <polygon
+                                                            points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                                </svg>
+                                            </span> смотреть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__item projects-item">
+                        <div class="projects-item__column">
+                            <div class="projects-item__block projects-item__block_big">
+                                <div class="projects__name">
+                                    <h3>Строительство бассейна</h3>
+                                    <button class="link-with-arrow popup-project-open-btn">
+                                        <span>
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                 xml:space="preserve">
+                                                <polygon
+                                                        points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                            </svg>
+                                        </span>
+                                        Смотреть все фото</button>
+                                </div>
+                                <img src="img/Портфолио/photo_2.jpg" alt="" class="projects-item__bg">
+                            </div>
+                        </div>
+                        <div class="projects-item__column">
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_3.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_5.jpg" alt="" class="projects-item__bg">
+                                </div>
+                            </div>
+                            <div class="projects-item__subrow">
+                                <div class="projects-item__block">
+                                    <img src="img/Портфолио/photo_4.jpg" alt="" class="projects-item__bg">
+                                </div>
+                                <div class="projects-item__block first-screen__block_last">
+                                    <div class="projects-item__desc-block">
+                                        <p class="projects-item__desc-title">подробнее о&nbsp;проекте</p>
+                                        <p class="projects-item__desc-content">Небольшой текст, призывающий
+                                            перейти в&nbsp;полное описание проекта</p>
+                                        <button class="projects-item__desc-open-btn link-with-arrow popup-project-open-btn">
+                                            <span>
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;"
+                                                     xml:space="preserve">
+                                                    <polygon
+                                                            points="405.606,167.5 384.394,188.713 418.787,223.106 0,223.106 0,253.106 418.787,253.106 384.394,287.5 405.606,308.713 476.213,238.106 "/>
+                                                </svg>
+                                            </span> смотреть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="map-block container">
                 <p class="map-block__title">карта объектов</p>
                 <p class="map-block__subtitle">Мы работаем по&nbsp;всему побережью Черного моря.</p>
@@ -164,10 +838,12 @@
                         <p class="questions__content">Также Вы можете задать <span>все интересующие вас вопросы</span>
                             по телефону:</p>
                         <a href="tel:+79180000000" class="questions__phone">
-                        <span><svg viewBox="-21 -21 682.66732 682" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m551.207031 485.898438-96.929687-63.695313c-23.070313-15.160156-53.023438-13.84375-74.535156 3.273437-18.839844 14.992188-45.882813 13.460938-62.90625-3.566406l-98.417969-98.414062c-17.019531-17.023438-18.554688-44.070313-3.5625-62.910156 17.117187-21.511719 18.429687-51.464844 3.269531-74.535157l-63.695312-96.929687c-11.136719-16.945313-28.414063-27.089844-48.648438-28.558594-20.234375-1.453125-38.785156 6.078125-52.25 21.246094-74.609375 84.011718-70.785156 212.085937 8.699219 291.566406l204.722656 204.726562c41.359375 41.359376 95.863281 62.226563 150.484375 62.226563 50.347656 0 100.789062-17.738281 141.089844-53.523437 15.164062-13.472657 22.707031-32.027344 21.238281-52.257813-1.464844-20.230469-11.605469-37.503906-28.558594-48.648437zm0 0"/><path
-                                d="m634.507812 5.828125c-3.515624-3.515625-8.28125-5.496094-13.253906-5.496094h-113.109375c-10.355469 0-18.75 8.394531-18.75 18.75 0 10.351563 8.394531 18.746094 18.75 18.746094h67.929688l-209.3125 209.855469c-7.3125 7.328125-7.292969 19.199218.035156 26.511718 3.65625 3.648438 8.449219 5.472657 13.238281 5.472657 4.804688 0 9.613282-1.835938 13.277344-5.507813l209.191406-209.734375-.003906 67.757813c0 10.355468 8.394531 18.75 18.746094 18.75h.003906c10.351562 0 18.746094-8.394532 18.746094-18.75l.003906-113.105469c0-4.964844-1.972656-9.734375-5.492188-13.25zm0 0"/>
-                        </svg></span>
+                        <span>
+                            <svg viewBox="-21 -21 682.66732 682" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m551.207031 485.898438-96.929687-63.695313c-23.070313-15.160156-53.023438-13.84375-74.535156 3.273437-18.839844 14.992188-45.882813 13.460938-62.90625-3.566406l-98.417969-98.414062c-17.019531-17.023438-18.554688-44.070313-3.5625-62.910156 17.117187-21.511719 18.429687-51.464844 3.269531-74.535157l-63.695312-96.929687c-11.136719-16.945313-28.414063-27.089844-48.648438-28.558594-20.234375-1.453125-38.785156 6.078125-52.25 21.246094-74.609375 84.011718-70.785156 212.085937 8.699219 291.566406l204.722656 204.726562c41.359375 41.359376 95.863281 62.226563 150.484375 62.226563 50.347656 0 100.789062-17.738281 141.089844-53.523437 15.164062-13.472657 22.707031-32.027344 21.238281-52.257813-1.464844-20.230469-11.605469-37.503906-28.558594-48.648437zm0 0"/><path
+                                    d="m634.507812 5.828125c-3.515624-3.515625-8.28125-5.496094-13.253906-5.496094h-113.109375c-10.355469 0-18.75 8.394531-18.75 18.75 0 10.351563 8.394531 18.746094 18.75 18.746094h67.929688l-209.3125 209.855469c-7.3125 7.328125-7.292969 19.199218.035156 26.511718 3.65625 3.648438 8.449219 5.472657 13.238281 5.472657 4.804688 0 9.613282-1.835938 13.277344-5.507813l209.191406-209.734375-.003906 67.757813c0 10.355468 8.394531 18.75 18.746094 18.75h.003906c10.351562 0 18.746094-8.394532 18.746094-18.75l.003906-113.105469c0-4.964844-1.972656-9.734375-5.492188-13.25zm0 0"/>
+                            </svg>
+                        </span>
                             +7 (918) 000-00-00
                         </a>
                     </div>
@@ -308,7 +984,7 @@
                         <span>30 мин</span>
                         <p>Сдаем объект и&nbsp;заключаем договор на&nbsp;сервисное обслуживание</p>
                     </div>
-                    <button class="scheme__estimate-btn"><span>расчитать</span> смету онлайн</button>
+                    <button class="scheme__estimate-btn popup-callback-estimate-open-btn"><span>расчитать</span> смету онлайн</button>
                 </div>
             </div>
         </div>
