@@ -2570,6 +2570,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   flex-grow: 1;
   flex-direction: column;
+  margin-top: -55px;
 }
 .thanks__top {
   font-size: 14.15rem;
@@ -2602,4 +2603,40 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 45.5px;
   height: 91px;
   max-height: 91px;
+  font-size: 2.65rem;
+  color: #252b3e;
+}
+
+.error {
+  background-color: #dbf0f6;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-top: -55px;
+}
+.error__block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.error__left {
+  margin-right: 49px;
+  text-align: right;
+}
+.error__top {
+  font-size: 6.7rem;
+  color: #6a6c74;
+}
+.error__bottom {
+  font-size: 4.25rem;
+  color: #6a6c74;
+}
+.error__button {
+  width: 320px;
+  border-radius: 45.5px;
+  height: 91px;
+  max-height: 91px;
+  font-size: 2.65rem;
+  color: #252b3e;
 }
