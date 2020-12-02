@@ -27,6 +27,18 @@
   font-family: "PT sans cursive tall";
   src: url(../fonts/PT_Sans/PTS56F.ttf);
 }
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .reversed {
   transform: scale(-1, 1);
 }
@@ -661,7 +673,6 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   background-color: #252b3e;
   color: #ffffff;
-  padding-bottom: 18px;
 }
 .footer svg {
   width: 25px;
@@ -1330,7 +1341,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .full-portfolio__item {
   width: 25%;
-  cursor: pointer;
   overflow: hidden;
   flex: 1 1 auto;
   position: relative;
@@ -2051,6 +2061,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.75rem;
   display: flex;
   align-items: center;
+  background: linear-gradient(to right, #20323f 0%, #fff 10%, #20323f 15%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 1s;
+  background-position: 0px;
 }
 .map-block__link svg {
   height: 35px;
@@ -2059,6 +2075,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .map-block__link svg * {
   fill: #f7e12a;
+}
+.map-block__link:nth-of-type(1):hover {
+  background-position: 260px;
+}
+.map-block__link:nth-of-type(2):hover {
+  background-position: 300px;
+}
+.map-block__link:nth-of-type(3):hover {
+  background-position: 220px;
 }
 .map-block__map {
   margin-top: 44px;
@@ -2537,4 +2562,44 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   font-size: 1.5rem;
   letter-spacing: 0.39px;
+}
+
+.thanks {
+  background-color: #dbf0f6;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.thanks__top {
+  font-size: 14.15rem;
+  color: #373636;
+  text-transform: uppercase;
+  font-family: "PT sans bold";
+  position: relative;
+}
+.thanks__image {
+  position: absolute;
+  right: 100%;
+  bottom: 40px;
+}
+.thanks__center {
+  font-size: 12rem;
+  color: #5c6264;
+  letter-spacing: 3.36px;
+}
+.thanks__bottom {
+  display: flex;
+  align-items: center;
+}
+.thanks__bottom > span {
+  color: #6a6c74;
+  font-size: 5.15rem;
+  margin-right: 30px;
+}
+.thanks__bottom > a {
+  width: 320px;
+  border-radius: 45.5px;
+  height: 91px;
+  max-height: 91px;
 }
