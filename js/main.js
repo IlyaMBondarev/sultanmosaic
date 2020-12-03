@@ -96,8 +96,6 @@ if ($('.popup-project-bg').length) {
 
 // validation
 
-
-
 async function formSend(form) {
     let error = formValidate(form);
 
@@ -149,6 +147,56 @@ let phones = document.querySelectorAll("._phone");
 phones.forEach(phone => phone.addEventListener("input", mask, false));
 phones.forEach(phone => phone.addEventListener("focus", mask, false));
 phones.forEach(phone => phone.addEventListener("blur", mask, false));
+
+//sticky-header
+
+myScroll();
+
+window.onscroll = function() {
+    myScroll();
+}
+
+function _scroll(block, b, c){
+    const d = document.querySelector(block);
+    let e = document.body.scrollTop > 200 || document.documentElement.scrollTop > 200;
+    if(b == 'slideDown'){
+        if(e){
+            d.style.top = '0';
+        }
+        else{
+            d.style.top = c;
+
+        }
+    }
+    else if(b == 'slideUp'){
+        if(e){
+            d.style.bottom = '0';
+        }
+        else{
+            d.style.bottom = c;
+        }
+    }
+    else if(b == 'slideLeft'){
+        if(e){
+            d.style.left = '0';
+        }
+        else{
+            d.style.left = c;
+        }
+    }
+    else{
+        if(e){
+            d.style.right = '0';
+        }
+        else{
+            d.style.right = c;
+        }
+    }
+}
+
+function myScroll() {
+    _scroll('.header-sticky', 'slideDown', '-100%');
+}
 //карусель-слайдер на странице услуги
 
 $(document).ready(function() {
