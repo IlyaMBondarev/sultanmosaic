@@ -213,10 +213,10 @@ $(document).ready(function() {
                     0: {
                         items: 1,
                     },
-                    630: {
+                    650: {
                         items: 2,
                     },
-                    950: {
+                    1321: {
                         items: 3,
                     },
                 }
@@ -239,6 +239,7 @@ $(document).ready(function() {
                 mouseDrag: false,
                 nav: false,
                 dots: false,
+                touchDrag: false,
             });
             $('.projects-carousel-slider__arrow-right').click(function () {
                 owl.trigger('next.owl.carousel');
