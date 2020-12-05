@@ -55,10 +55,12 @@ img {
 .input-error {
   padding-left: 20px;
   margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
   display: block;
   visibility: hidden;
+  -webkit-user-select: none;
+          user-select: none;
   color: red;
 }
 
@@ -1316,6 +1318,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1100px) {
   .footer__right {
     flex-direction: column;
+    width: 100%;
   }
 }
 @media (max-width: 1000px) {
@@ -3042,6 +3045,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-start;
   margin-top: 39px;
   margin-bottom: 39px;
+  position: relative;
 }
 .questions__form input {
   margin-right: 25px;
@@ -3054,6 +3058,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .questions__form input::placeholder {
   color: #717070;
+}
+.questions__form > span {
+  position: absolute;
+  top: 100%;
+}
+.questions__form > span:last-of-type {
+  left: 39%;
 }
 .questions__form button {
   font-size: 2.4rem;
@@ -3076,13 +3087,19 @@ h1, h2, h3, h4, h5, h6 {
   }
   .questions__form input {
     margin-right: 0;
-    margin-bottom: 30px;
   }
   .questions__form button {
     width: 448px;
   }
+  .questions__form > span {
+    top: 0;
+    position: static;
+  }
+  .questions__form > span:last-of-type {
+    left: 0;
+  }
 }
-@media (max-width: 1320px) and (max-width: 850px) {
+@media (max-width: 850px) {
   .questions__form button {
     height: 61px;
   }
@@ -3237,7 +3254,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 16px 19px 17px 19px;
   min-width: 448px;
   font-size: 2rem;
-  margin-bottom: 18px;
 }
 .questions-with-back__form input::placeholder {
   color: #717070;
@@ -3258,6 +3274,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f7e12a;
   border-radius: 34.9px;
   box-shadow: 4px 5.7px 21px 0 rgba(0, 0, 0, 0.13);
+  align-self: center;
 }
 @media (max-width: 1023px) {
   .questions-with-back__form button {
