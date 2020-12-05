@@ -498,6 +498,12 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
   width: 36%;
 }
+@media (max-width: 1080px) {
+  .popup-project__right {
+    float: none;
+    width: 100%;
+  }
+}
 .popup-project-carousel-slider__arrow {
   position: absolute;
   top: 50%;
@@ -1573,7 +1579,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-grow: 1;
   margin: 9px 7px;
   border: 2px solid #ffffff;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1586,7 +1592,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 750px) {
   .first-screen__icon {
-    margin: 5px 3px;
+    margin: 3px 3px;
     border: 1px solid #ffffff;
   }
   .first-screen__icon svg {
@@ -3387,6 +3393,17 @@ a.map-block__link:nth-of-type(3):hover {
   padding-right: 21px;
   border-right: 1px solid #b7c3c6;
 }
+@media (max-width: 850px) {
+  .catalog__left {
+    min-width: 283px;
+    max-width: 283px;
+  }
+}
+@media (max-width: 650px) {
+  .catalog__left {
+    display: none;
+  }
+}
 .catalog__nav-block input {
   display: none;
 }
@@ -3395,6 +3412,11 @@ a.map-block__link:nth-of-type(3):hover {
   margin-bottom: 30px;
   transition: all 0.4s linear 0.4s;
 }
+@media (max-width: 850px) {
+  .catalog__nav-block input:checked ~ .catalog__menu {
+    margin-bottom: 15px;
+  }
+}
 .catalog__nav-block label {
   display: flex;
   align-items: center;
@@ -3402,10 +3424,23 @@ a.map-block__link:nth-of-type(3):hover {
   margin-bottom: 34px;
   cursor: pointer;
 }
+@media (max-width: 850px) {
+  .catalog__nav-block label {
+    padding: 10px 12px;
+    margin-bottom: 17px;
+  }
+}
 .catalog__nav-block label svg {
   width: 31px;
   height: 31px;
   margin-right: 15px;
+}
+@media (max-width: 850px) {
+  .catalog__nav-block label svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+  }
 }
 .catalog__nav-block label svg * {
   fill: #252b3e;
@@ -3488,15 +3523,41 @@ a.map-block__link:nth-of-type(3):hover {
   flex: 1 1 auto;
   padding-left: 20px;
 }
+@media (max-width: 650px) {
+  .catalog__right {
+    padding-left: 0;
+  }
+}
 .catalog__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 650px) {
+  .catalog__items {
+    justify-content: space-around;
+  }
+}
 .catalog__item {
   width: 32.47%;
   min-width: 310px;
+}
+@media (max-width: 650px) {
+  .catalog__item {
+    width: 48%;
+    min-width: auto;
+  }
+}
+@media (max-width: 550px) {
+  .catalog__item {
+    width: 95%;
+  }
+}
+@media (max-width: 400px) {
+  .catalog__item {
+    width: 100%;
+  }
 }
 .catalog__pagination {
   display: flex;
@@ -3519,6 +3580,16 @@ a.map-block__link:nth-of-type(3):hover {
   width: 34px;
   height: 34px;
   border-radius: 50%;
+}
+@media (max-width: 850px) {
+  .catalog__pagination li {
+    width: 20px;
+    height: 20px;
+  }
+  .catalog__pagination li a {
+    width: 20px;
+    height: 20px;
+  }
 }
 .catalog__pagination li:first-of-type {
   margin-right: 20px;
@@ -3550,6 +3621,11 @@ a.map-block__link:nth-of-type(3):hover {
   display: flex;
   background-color: #dbf0f6;
 }
+@media (max-width: 850px) {
+  .catalog-item {
+    margin-bottom: 85px;
+  }
+}
 .catalog-item__image {
   width: 100%;
   border-radius: 15px;
@@ -3573,6 +3649,17 @@ a.map-block__link:nth-of-type(3):hover {
   align-items: center;
   transition: all 0.25s linear;
 }
+@media (max-width: 850px) {
+  .catalog-item__block {
+    padding: 15px;
+    min-height: 110px;
+  }
+}
+@media (max-width: 650px) {
+  .catalog-item__block {
+    min-width: auto;
+  }
+}
 .catalog-item__block:hover {
   background-color: #252b3e;
 }
@@ -3590,6 +3677,11 @@ a.map-block__link:nth-of-type(3):hover {
   text-transform: uppercase;
   transition: all 0.25s linear;
 }
+@media (max-width: 550px) {
+  .catalog-item__name {
+    font-size: 2rem;
+  }
+}
 .catalog-item__info {
   display: flex;
   justify-content: space-between;
@@ -3597,10 +3689,21 @@ a.map-block__link:nth-of-type(3):hover {
   margin-top: 15px;
   margin-bottom: 17px;
 }
+@media (max-width: 550px) {
+  .catalog-item__info {
+    justify-content: space-around;
+    font-size: 1.8rem;
+  }
+}
 .catalog-item__info span {
   font-size: 1.4rem;
   color: #6a6c74;
   transition: all 0.25s linear;
+}
+@media (max-width: 550px) {
+  .catalog-item__info span {
+    font-size: 1.8rem;
+  }
 }
 .catalog-item__maker {
   text-transform: uppercase;
