@@ -1,0 +1,41 @@
+.error
+	background-color: $lightBlue
+	display: flex
+	align-items: center
+	flex-grow: 1
+	flex-direction: column
+	justify-content: center
+	padding: 60px 15px
+	@media (max-width: 650px)
+		padding-top: 30px
+		padding-bottom: 30px
+	& img
+		max-width: 90%
+	&__block
+		display: flex
+		align-items: center
+		@media (max-width: 1023px)
+			flex-direction: column
+	&__left
+		margin-right: 49px
+		text-align: right
+		@media (max-width: 1023px)
+			margin-right: 0
+			margin-bottom: 30px
+			text-align: center
+	&__top
+		font-size: 6.7rem
+		color: $greyContent
+	&__bottom
+		font-size: 4.25rem
+		color: $greyContent
+	&__button
+		width: 320px
+		border-radius: 45.5px
+		height: 91px
+		max-height: 91px
+		font-size: 2.65rem
+		color: $darkBlue
+		@media (max-width: 850px)
+			height: 55px
+			width: 288px

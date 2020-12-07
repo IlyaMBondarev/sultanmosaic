@@ -1,0 +1,237 @@
+//<шрифты>
+
+//<подключаем шрифты>
+
+@font-face
+  font-family: 'logo'
+  src: url(../fonts/OrchideaPro/OrchideaPro-Bold.ttf)
+
+@font-face
+  font-family: 'PT sans'
+  src: url(../fonts/PT_Sans/PTS55F.ttf)
+
+@font-face
+  font-family: 'PT sans tall'
+  src: url(../fonts/PT_Sans/PTN57F.ttf)
+
+@font-face
+  font-family: 'PT sans bold'
+  src: url(../fonts/PT_Sans/PTS75F.ttf)
+
+@font-face
+  font-family: 'PT sans bold tall'
+  src: url(../fonts/PT_Sans/PTN77F.ttf)
+
+@font-face
+  font-family: 'PT sans cursive'
+  src: url(../fonts/PT_Sans/PTS76F.ttf)
+
+@font-face
+  font-family: 'PT sans cursive tall'
+  src: url(../fonts/PT_Sans/PTS56F.ttf)
+
+
+
+//</подключаем шрифты>
+
+//<шрифт по умолчанию>
+$fontfamily: "PT sans"
+$tall: "PT sans tall"
+$bold: "PT sans bold"
+$boldTall: "PT sans bold tall"
+$cursive: "PT sans cursive"
+$tallCursive: "PT sans cursive tall"
+$fontfamilyLogo: 'logo' !important
+//</шрифт по умолчанию>
+
+//</шрифты>
+
+//<переменные>
+$minwidth: 320px
+$white: #ffffff
+$yellow: #f7e12a
+$yellowHover: #f7c92a
+$darkBlue: #252b3e
+$blackTitles: #24262c
+$greyContent: #6a6c74
+$darkGreyContent: #484b52
+$lightBlue: #dbf0f6
+$placeholder: #717070
+//</переменные>
+
+//<общие параметры>
+
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  overflow-anchor: none
+
+.content
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  & > div
+    width: 100%
+
+.reversed
+  transform: scale(-1,1)
+
+img
+  user-select: none
+
+.input-error
+  padding-left: 20px
+  margin-top: 10px
+  margin-bottom: 10px
+  font-size: 14px
+  display: block
+  visibility: hidden
+  user-select: none
+  color: red
+
+._error
+  border: 1px solid #ff0f0f !important
+  & + span
+    visibility: visible !important
+
+.container
+  max-width: 1570px
+  padding: 0 15px
+  margin: 0 auto
+
+.container-small
+  max-width: 1380px
+  padding: 0 15px
+  margin: 0 auto
+
+.logo
+  font-family: $fontfamilyLogo
+  font-size: 41.5px
+  font-weight: 700
+  cursor: pointer
+  white-space: nowrap
+  user-select: none
+  @media (max-width: 450px)
+    font-size: 35px
+
+.yellow-button
+  background-color: $yellow
+  transition: all 0.35s ease
+  overflow: hidden
+  position: relative
+  line-height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  &:before
+    content: attr(data-text)
+    color: inherit
+    position: absolute
+    top: -80%
+    left: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+    width: 100%
+    transition: top 0.2s linear
+  & span
+    transition: margin-top 0.2s linear
+  &:hover
+    background-color: $yellowHover
+    & span
+      margin-top: 90%
+    &:before
+      top: 0
+
+.flying-block
+  position: relative
+  border-radius: 15px
+  border: 1px solid #eeeeee
+  background-color: #ffffff
+  box-shadow: none
+  transform-style: flat
+  transition: all 0.25s ease-out
+  &:before
+    content: ""
+    position: absolute
+    z-index: -2
+    border-radius: 15px
+    transition: all 0.25s ease-out
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    box-shadow: 4px 5.7px 21px 0 rgba(0, 0, 0, 0.13)
+  &:hover
+    border-color: #dedede
+    &:before
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset
+
+.slide-in
+  position: relative
+  z-index: 1
+  transition: color 0.4s ease-in-out
+  transition-delay: 0.1s !important
+  overflow: hidden
+  &:after
+    transition: width 0.5s ease-in-out
+    content: ""
+    background-color: $darkBlue
+    display: block
+    position: absolute
+    z-index: -1
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 100%
+  &:hover
+    color: $darkBlue
+    & path
+      fill: $darkBlue
+  &:hover:after
+    width: 0
+
+.link-with-arrow
+  text-align: center
+  display: inline-block
+  position: relative
+  text-decoration: none
+  padding: 20px 0
+  overflow: hidden
+  transition: all 0.2s linear 0s
+  @media (max-width: 850px)
+    padding: 15px 0
+  & > span
+    font-family: $bold
+    font-size: 15px
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    top: 0
+    opacity: 1
+    height: 100%
+    width: 40px
+    transition: all 0.2s linear 0s
+    & > svg
+      height: 100%
+      width: 30px
+  &:hover
+    text-indent: 0
+    & > span
+      opacity: 0
+
+
+
+
+//<общие параметры>
+
+
+//<основной блок>
+
+//</основной блок>
+

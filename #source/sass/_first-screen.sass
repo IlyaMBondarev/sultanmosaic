@@ -1,0 +1,117 @@
+.first-screen
+  background-color: $lightBlue
+  padding-bottom: 55px
+  &__row
+    margin-top: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    @media (max-width: 1300px)
+      flex-direction: column
+  &__left
+    flex-grow: 1
+  &__title
+    font-size: 5.55rem
+    line-height: 110%
+    color: $darkBlue
+    font-weight: 400
+    max-width: 380px
+  &__content
+    color: $greyContent
+    font-size: 2.6rem
+    line-height: 110%
+    margin-top: 30px
+  &__right
+    position: relative
+    z-index: 2
+    width: 712px
+    height: 286px
+    margin-left: 60px
+    display: flex
+    border-radius: 15px
+    @media (max-width: 1300px)
+      margin-left: 0
+      margin-top: 30px
+    @media (max-width: 750px)
+      width: 356px
+      height: 143px
+      & img
+        transform: scale(0.5) translate(-50%, -50%)
+    @media (max-width: 450px)
+      width: 237.333333px
+      height: 95.333333px
+      & img
+        transform: scale(0.333333) translate(-100%, -100%)
+    &::before
+      position: absolute
+      content: ''
+      top: -12px
+      left: -10px
+      z-index: 0
+      background-color: transparent
+      border: 2px solid $darkBlue
+      border-radius: 10px
+      width: 19.67%
+      height: 42%
+      @media (max-width: 750px)
+        top: -8px
+        left: -6px
+  &__column
+    width: 50%
+    display: flex
+    &:last-of-type
+      width: 46%
+      margin-left: 4%
+      flex-direction: column
+      justify-content: space-between
+  &__subrow
+    display: flex
+    justify-content: space-between
+    height: 46%
+    & .first-screen__block:first-of-type img
+      margin-left: -385px
+      @media (max-width: 750px)
+        margin-left: -192.5px
+      @media (max-width: 450px)
+        margin-left: -128.3333px
+    & .first-screen__block:last-of-type img
+      margin-left: -561px
+      @media (max-width: 750px)
+        margin-left: -280.5px
+      @media (max-width: 450px)
+        margin-left: -187px
+    &:last-of-type .first-screen__block:first-of-type img
+      margin-top: -153px
+      @media (max-width: 750px)
+        margin-top: -76.5px
+      @media (max-width: 450px)
+        margin-top: -51px
+  &__block
+    border-radius: 15px
+    z-index: 1
+    width: 46%
+    height: 100%
+    overflow: hidden
+    &_big
+      width: 100%
+    &_last
+      background-color: $darkBlue
+      display: flex
+  &__icon
+    flex-grow: 1
+    margin: 9px 7px
+    border: 2px solid $white
+    border-radius: 15px
+    display: flex
+    justify-content: center
+    align-items: center
+    & svg
+      height: 60px
+      & *
+        fill: $white
+    @media (max-width: 750px)
+      margin: 3px 3px
+      border: 1px solid $white
+      & svg
+        height: 50%

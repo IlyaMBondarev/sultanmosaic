@@ -1,0 +1,79 @@
+.thanks
+	background-color: $lightBlue
+	display: flex
+	align-items: center
+	flex-grow: 1
+	flex-direction: column
+	justify-content: center
+	@media (max-width: 1390px)
+		padding-top: 70px
+		padding-bottom: 70px
+	@media (max-width: 650px)
+		padding-top: 30px
+		padding-bottom: 30px
+	&__top
+		font-size: 14.15rem
+		color: #373636
+		text-transform: uppercase
+		font-family: $bold
+		position: relative
+		margin-top: 25px
+		text-align: center
+		@media (max-width: 1390px)
+			font-size: 10rem
+		@media (max-width: 650px)
+			display: flex
+			flex-direction: column
+			align-items: center
+		@media (max-width: 450px)
+			font-size: 7rem
+	&__image
+		position: absolute
+		right: 100%
+		bottom: 40px
+		@media (max-width: 1390px)
+			bottom: 10px
+		@media (max-width: 650px)
+			position: static
+	&__center
+		font-size: 12rem
+		color: #5c6264
+		letter-spacing: 3.36px
+		text-align: center
+		@media (max-width: 1390px)
+			font-size: 8rem
+		@media (max-width: 650px)
+			letter-spacing: normal
+			font-size: 6rem
+	&__bottom
+		display: flex
+		align-items: center
+		@media (max-width: 1390px)
+			margin-top: 10px
+			@media (max-width: 900px)
+				flex-direction: column
+		& > span
+			color: $greyContent
+			font-size: 5.15rem
+			margin-right: 30px
+			@media (max-width: 1390px)
+				font-size: 4rem
+			@media (max-width: 900px)
+				margin-right: 0
+				text-align: center
+			@media (max-width: 450px)
+				font-size: 4rem
+		& > a
+			min-width: 320px
+			border-radius: 45.5px
+			height: 91px
+			max-height: 91px
+			font-size: 2.65rem
+			color: $darkBlue
+			@media (max-width: 1390px)
+				height: 70px
+				@media (max-width: 900px)
+					margin-top: 15px
+				@media (max-width: 850px)
+					height: 55px
+					min-width: 288px

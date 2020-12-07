@@ -1,0 +1,26 @@
+.breadcrumbs
+  display: flex
+  flex-wrap: wrap
+  align-items: baseline
+  margin-top: 39px
+  margin-bottom: 41px
+  color: #8e8f93
+  @media (max-width: 850px)
+    margin-top: 25px
+    margin-bottom: 20px
+  &__block
+    &:after
+      right: 0
+      content: '/'
+      color: #8e8f93
+      padding-left: 8px
+      padding-right: 11px
+      font-size: 1.5rem
+    &:last-of-type:after
+      content: ''
+      padding-left: 0
+      padding-right: 0
+  &__link
+    white-space: nowrap
+    font-size: 16px
+    letter-spacing: 0.39px

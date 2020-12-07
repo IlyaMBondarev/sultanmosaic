@@ -1,0 +1,198 @@
+.scheme
+  position: relative
+  height: 1034px
+  padding-bottom: 70px
+  @media (max-width: 1320px)
+    height: 900px
+  @media (max-width: 767px)
+    height: auto
+  &-main
+    background: url('../img/Главная/bg_shema_raboty.png') bottom left no-repeat
+    @media (max-width: 1320px)
+      background-size: 100%
+  &-service
+    background: url('../img/Услуга/bg_zahvat.png') bottom right no-repeat
+    @media (max-width: 1320px)
+      background-size: 100%
+  & > div
+    background: url('../img/Главная/dashed.png') center no-repeat
+    height: 100%
+    @media (max-width: 767px)
+      background: none
+  &__title
+    font-size: 6rem
+    line-height: 110%
+    font-family: $bold
+    color: $blackTitles
+    text-transform: uppercase
+    padding-top: 24%
+    padding-left: 14%
+    @media (max-width: 1320px)
+      padding-top: 21%
+    & span
+      display: block
+    @media (max-width: 1150px)
+      padding-left: 5%
+    @media (max-width: 1023px)
+      padding-top: 25%
+    @media (max-width: 767px)
+      padding-left: 0
+      padding-top: 0
+      text-align: center
+      margin-bottom: 30px
+      font-size: 5rem
+      & span
+        display: inline
+  &__blocks
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    @media (max-width: 650px)
+      justify-content: space-around
+  &__block
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 255px
+    left: 50%
+    top: 50%
+    @media (max-width: 850px)
+      max-width: 190px
+    @media (max-width: 767px)
+      transform: none !important
+      position: static
+      margin-bottom: 20px
+      left: 0
+      top: 0
+      margin-right: 5%
+      width: 30%
+      max-width: none
+      &:nth-of-type(3n)
+        margin-right: 0
+    @media (max-width: 650px)
+      width: 47.5%
+      &:nth-of-type(3n)
+        margin-right: 5%
+      &:nth-of-type(2n)
+        margin-right: 0
+    & span
+      display: block
+      font-family: $bold
+      font-size: 2.3rem
+      color: $darkGreyContent
+      margin-top: 10px
+      margin-bottom: 5px
+    & p
+      font-size: 1.8rem
+      line-height: 110%
+      color: $darkGreyContent
+      text-align: center
+    &:nth-of-type(1)
+      transform: translate(-58%, -170%)
+      @media (max-width: 850px)
+        transform: translate(-70%, -264%)
+      & .scheme__icon
+        padding: 24px 25px 45px 32px
+    &:nth-of-type(2)
+      transform: translate(75%, -144%)
+      @media (max-width: 850px)
+        transform: translate(145%, -225%)
+      & .scheme__icon
+        padding: 30px 37px 44px 36px
+    &:nth-of-type(3)
+      transform: translate(135%, 20%)
+      @media (max-width: 850px)
+        transform: translate(214%, 70%)
+      & .scheme__icon
+        padding: 30px 27px 38px 38px
+    &:nth-of-type(4)
+      transform: translate(-40%, 80%)
+      @media (max-width: 850px)
+        transform: translate(-49%, 150%)
+      & .scheme__icon
+        padding: 21px 34px 47px 37px
+    &:nth-of-type(5)
+      transform: translate(-170%, -8%)
+      @media (max-width: 850px)
+        transform: translate(-207%, 28%)
+      & .scheme__icon
+        padding: 27px 22px 41px 41px
+  &__icon
+    background: url("../img/Главная/bg-scheme-icon.png") center no-repeat
+    background-size: contain
+    display: inline-block
+    @media (max-width: 850px)
+      padding:  20px 20px 25px 25px !important
+    & svg
+      height: 76px
+      @media (max-width: 850px)
+        height: 40px
+      & > *
+        fill: #000000
+  &__estimate-btn
+    width: 218px
+    height: 218px
+    position: absolute
+    bottom: 8%
+    right: 14%
+    border-radius: 50%
+    background-color: transparent
+    color: $blackTitles
+    font-size: 3.1rem
+    text-align: center
+    line-height: 100%
+    box-shadow: 0 0 0 4px $yellow
+    -webkit-transition: color 0.3s
+    -moz-transition: color 0.3s
+    transition: color 0.3s
+    @media (max-width: 1600px)
+      right: 40px
+    @media (max-width: 1320px)
+      bottom: 50%
+      right: 50%
+      transform: translate(50%, 77%)
+      width: 200px
+      height: 200px
+    @media (max-width: 850px)
+      width: 160px
+      height: 160px
+      transform: translate(50%, 50%)
+    @media (max-width: 767px)
+      transform: none
+      bottom: 0
+      right: 0
+      position: relative
+      margin: 0 auto
+      display: block
+    & span
+      color: $blackTitles
+      font-family: $bold
+      letter-spacing: 1.55px
+      display: block
+      text-transform: uppercase
+    &:after
+      pointer-events: none
+      position: absolute
+      width: 100%
+      height: 100%
+      border-radius: 50%
+      content: ''
+      -webkit-box-sizing: content-box
+      -moz-box-sizing: content-box
+      box-sizing: content-box
+      top: -2px
+      left: -2px
+      padding: 2px
+      z-index: -1
+      background: $yellow
+      -webkit-transition: -webkit-transform 0.2s, opacity 0.3s
+      -moz-transition: -moz-transform 0.2s, opacity 0.3s
+      transition: transform 0.2s, opacity 0.3s
+    &:hover
+      &:after
+        -webkit-transform: scale(1.3)
+        -moz-transform: scale(1.3)
+        -ms-transform: scale(1.3)
+        transform: scale(1.3)
+        opacity: 0

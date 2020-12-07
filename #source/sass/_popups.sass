@@ -1,0 +1,289 @@
+.popup-callback
+  position: fixed
+  box-shadow: 7px 9px 21px 1px rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+  background-color: $white
+  padding: 34px 30px 40px 30px
+  z-index: 500
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 405px
+  overflow: auto
+  @media (max-width: 480px)
+    width: 300px
+    padding: 15px
+  &-bg, &-bg-estimate
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(255, 255, 255, 0.8)
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    z-index: 1500
+    display: none
+    &-visible
+      display: block
+  &__close
+    position: absolute
+    user-select: none
+    top: 11px
+    right: 11px
+    font-size: 20px
+    color: #a8a7a7
+    background-color: transparent
+    transform: rotate(45deg)
+    &:hover
+      color: #363636
+  &__title
+    font-size: 3rem
+    color: $darkBlue
+    line-height: 130%
+    text-align: center
+  &__subtitle
+    font-size: 2.65rem
+    color: $greyContent
+    letter-spacing: 0.66px
+    margin-bottom: 28px
+    line-height: 110%
+    text-align: center
+  &__block
+    & > label
+      display: block
+      position: relative
+      color: $greyContent
+      font-size: 1.8rem
+      & input
+        margin-top: 10px
+        box-shadow: 3px 4px 6px 1px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        border: 1px solid #f8f8f8
+        background-color: $white
+        color: $darkBlue
+        font-size: 18px
+        letter-spacing: 0.45px
+        padding: 14px 15px
+        width: 100%
+        text-transform: capitalize
+      & textarea
+        margin-top: 10px
+        box-shadow: 3px 4px 6px 1px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        border: 1px solid #f8f8f8
+        background-color: $white
+        color: $darkBlue
+        font-size: 18px
+        letter-spacing: 0.45px
+        padding: 14px 15px
+        width: 100%
+        resize: vertical
+        min-height: 100px
+  &__button
+    margin-top: 10px
+    width: 100%
+    padding: 18px 0
+    color: $darkBlue
+    font-size: 2.4rem
+    letter-spacing: 0.61px
+    background-color: $yellow
+    max-height: 60px
+    border-radius: 30px
+  &__small-content
+    white-space: normal
+    color: #727070
+    font-size: 1.4rem
+    letter-spacing: 0.43px
+    line-height: 15px
+    text-align: center
+    margin-top: 19px
+    & > a
+      text-decoration: $greyContent solid underline
+
+.popup-project
+  position: fixed
+  box-shadow: 7px 9px 21px 1px rgba(0, 0, 0, 0.1)
+  border-radius: 15px
+  background-color: $white
+  padding: 43px 40px 10px 30px
+  z-index: 500
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 1060px
+  overflow: auto
+  @media (max-width: 1080px)
+    width: 62%
+    min-width: 300px
+    padding: 30px
+    max-height: 80%
+  &-bg
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(255, 255, 255, 0.8)
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    z-index: -500
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0s linear
+    &-visible
+      transition: opacity 0.2s linear
+      opacity: 1
+      visibility: visible
+      z-index: 1500
+  &__close
+    position: absolute
+    user-select: none
+    top: 19px
+    right: 19px
+    font-size: 25px
+    color: #a8a7a7
+    background-color: transparent
+    transform: rotate(45deg)
+    &:hover
+      color: #363636
+    @media (max-width: 1080px)
+      top: 5px
+  &__left
+    position: relative
+    float: left
+    max-width: 57%
+    margin-right: 36px
+    margin-bottom: 20px
+    & .owl-carousel
+      border-radius: 15px
+      overflow: hidden
+    @media (max-width: 1080px)
+      margin-right: 0
+      max-width: 100%
+      float: none
+  &__right
+    float: right
+    width: 36%
+    @media (max-width: 1080px)
+      float: none
+      width: 100%
+  &-carousel-slider__arrow
+    position: absolute
+    top: 50%
+    transform: translate(-50%)
+    opacity: 0.8
+    box-shadow: 4px 5.7px 21px 0 rgba(0, 0, 0, 0.13)
+    background-color: $white
+    transition: opacity 0.2s linear
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 36px
+    height: 36px
+    z-index: 5
+    border-radius: 50%
+    & img
+      width: 9px
+    &:hover
+      opacity: 1
+    &-left
+      left: 0
+      transform: translate(-50%, -50%)
+    &-right
+      right: 0
+      transform: translate(50%, -50%)
+  &__image
+    width: 100%
+    border-radius: 15px
+    & img
+      border-radius: 15px
+  &__info
+    & svg
+      min-width: 20px
+      max-width: 20px
+      margin-right: 15px
+      & *
+        fill: $yellow
+  &__title
+    font-size: 2.95rem
+    color: $blackTitles
+    font-family: $bold
+    margin-bottom: 10px
+    & span
+      text-transform: uppercase
+  &__subtitle
+    font-size: 2.15rem
+    color: $greyContent
+    display: flex
+    align-items: center
+    line-height: 110%
+    margin-bottom: 16px
+    & span
+      text-transform: uppercase
+  &__name, &__art
+    font-size: 2.15rem
+    color: $darkBlue
+    display: flex
+    align-items: center
+    line-height: 110%
+    margin-bottom: 48px
+    @media (max-width: 1080px)
+      margin-bottom: 20px
+  &__description
+    color: $greyContent
+    font-size: 1.7rem
+    line-height: 120%
+  &__table-name
+    font-family: $bold
+    font-size: 2.25rem
+    color: $blackTitles
+    letter-spacing: 0.56px
+    margin-bottom: 15px
+  &__table
+    width: 100%
+    & td
+      font-size: 1.85rem
+      color: $greyContent
+      line-height: 140%
+  &__form
+    clear: both
+    display: flex
+    @media (max-width: 1080px)
+      flex-direction: column
+      margin-top: 20px
+      margin-bottom: 20px
+  &__block
+    margin-right: 20px
+    flex: 1 1 auto
+    @media (max-width: 1080px)
+      margin-right: 0
+    & > label
+      display: block
+      position: relative
+      & input
+        margin-top: 10px
+        box-shadow: 3px 4px 6px 1px rgba(0, 0, 0, 0.1)
+        border-radius: 29px
+        border: 1px solid #f8f8f8
+        background-color: $white
+        color: $darkBlue
+        font-size: 18px
+        letter-spacing: 0.45px
+        padding: 17px 23px 16px 23px
+        width: 100%
+        text-transform: capitalize
+  &__button
+    margin-top: 10px
+    width: 100%
+    padding: 18px 0
+    color: $darkBlue
+    font-size: 2rem
+    letter-spacing: 0.61px
+    background-color: $yellow
+    max-height: 58px
+    border-radius: 29px
+    max-width: 200px
+    box-shadow: 4px 5.7px 21px 0 rgba(0, 0, 0, 0.13)
+    @media (max-width: 1080px)
+      max-width: 100%

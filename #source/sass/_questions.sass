@@ -1,0 +1,255 @@
+.questions
+  padding-top: 70px
+  padding-bottom: 57px
+  background-color: $lightBlue
+  @media (max-width: 550px)
+    padding-top: 30px
+    padding-bottom: 30px
+  &-contacts
+    padding-top: 70px
+    padding-bottom: 57px
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: 15px
+    box-shadow: 4px 5.7px 21px 0 rgba(0, 0, 0, 0.13)
+    background-color: #ffffff
+    margin-bottom: 70px
+    @media (max-width: 550px)
+      padding-top: 30px
+      padding-bottom: 30px
+      margin-left: -15px
+      margin-right: -15px
+  & > div
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title
+    font-size: 4.6rem
+    font-family: $bold
+    color: $blackTitles
+    margin-left: 15px
+    margin-right: 15px
+    text-align: center
+  &__subtitle
+    font-size: 3rem
+    color: $darkGreyContent
+    margin-top: 26px
+    margin-right: 15px
+    margin-left: 15px
+    @media (max-width: 1320px)
+      text-align: center
+  &__form
+    display: flex
+    align-items: flex-start
+    margin-top: 39px
+    margin-bottom: 39px
+    position: relative
+    & input
+      margin-right: 25px
+      border-radius: 34.9px
+      box-shadow: 4px 5.7px 21px 0 rgba(0, 0, 0, 0.13)
+      background-color: $white
+      padding: 20px 28px 21px 28px
+      min-width: 448px
+      font-size: 2.2rem
+      &::placeholder
+        color: $placeholder
+    & > span
+      position: absolute
+      top: 100%
+      &:last-of-type
+        left: 39%
+    & button
+      font-size: 2.4rem
+      color: $darkBlue
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 288px
+      height: 70px
+      background-color: $yellow
+      border-radius: 34.9px
+      box-shadow: 4px 5.7px 21px 0 rgba(0, 0, 0, 0.13)
+    @media (max-width: 1320px)
+      align-items: center
+      flex-direction: column
+      margin-left: 15px
+      margin-right: 15px
+      & input
+        margin-right: 0
+      & button
+        width: 448px
+      & > span
+        top: 0
+        position: static
+        &:last-of-type
+          left: 0
+    @media (max-width: 850px)
+      & button
+        height: 61px
+    @media (max-width: 550px)
+      margin-top: 20px
+      margin-bottom: 20px
+      & input
+        min-width: 288px
+        padding: 16px 28px 17px 28px
+      & button
+        width: 288px
+        height: 53px
+  &__agreement
+    color: $darkGreyContent
+    font-size: 2.1rem
+    margin-right: 15px
+    margin-left: 15px
+    @media (max-width: 1320px)
+      text-align: center
+  &__bottom
+    margin-top: 47px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    @media (max-width: 1320px)
+      flex-direction: column
+      margin-top: 30px
+  &__content
+    font-size: 3rem
+    color: $darkGreyContent
+    & span
+      font-family: $bold
+      color: $darkBlue
+    @media (max-width: 1320px)
+      text-align: center
+      margin-bottom: 10px
+  &__phone
+    font-size: 3.6rem
+    font-family: $bold
+    color: $blackTitles
+    display: flex
+    align-items: center
+    & span
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 44px
+      height: 44px
+      border-radius: 50%
+      background-color: $yellow
+      margin-right: 15px
+      @media (max-width: 850px)
+        width: 35px
+        height: 35px
+    & svg
+      width: 25px
+      & path
+        fill: $blackTitles
+      @media (max-width: 850px)
+        width: 17px
+
+.questions-with-back
+  background: url("../img/Главная/bg_zahvat.png") no-repeat center bottom, $lightBlue
+  @media (max-width: 1200px)
+    background: url("../img/Главная/bg_zahvat.png") no-repeat 60% bottom, $lightBlue
+  @media (max-width: 1023px)
+    background: $lightBlue
+  & > div
+    display: flex
+    padding: 70px 15px
+    @media (max-width: 1200px)
+      flex-direction: column
+    @media (max-width: 1023px)
+      padding: 40px 15px
+      align-items: center
+  &__left
+    max-width: 450px
+    @media (max-width: 1023px)
+      max-width: none
+  &__title
+    font-size: 3.6rem
+    font-family: $bold
+    text-align: center
+    color: $blackTitles
+  &__subtitle
+    font-size: 2.2rem
+    color: $darkGreyContent
+    margin-top: 24px
+    text-align: center
+    line-height: 110%
+    padding: 0 10px
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 26px
+    margin-bottom: 26px
+    & input
+      border-radius: 30px
+      background-color: $white
+      padding: 16px 19px 17px 19px
+      min-width: 448px
+      font-size: 2rem
+      &::placeholder
+        color: $placeholder
+      @media (max-width: 650px)
+        min-width: 288px
+    & button
+      font-size: 2.4rem
+      color: $darkBlue
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 288px
+      height: 65px
+      background-color: $yellow
+      border-radius: 34.9px
+      box-shadow: 4px 5.7px 21px 0 rgba(0, 0, 0, 0.13)
+      align-self: center
+      @media (max-width: 1023px)
+        min-width: 448px
+      @media (max-width: 650px)
+        min-width: 288px
+  &__agreement
+    font-size: 1.6rem
+    text-align: center
+    color: #302e2e
+    letter-spacing: 0.8px
+    line-height: 125%
+  &__right
+    margin-left: 70px
+    max-width: 450px
+    @media (max-width: 1200px)
+      margin-left: 0
+      margin-top: 20px
+      text-align: center
+    @media (max-width: 1023px)
+      max-width: none
+  &__content
+    margin-bottom: 47px
+    font-size: 2.2rem
+    line-height: 115%
+    color: $darkGreyContent
+    @media (max-width: 1023px)
+      margin-bottom: 20px
+  &__phone
+    font-size: 3.4rem
+    font-family: $bold
+    color: $blackTitles
+    display: flex
+    align-items: center
+    @media (max-width: 1200px)
+      justify-content: center
+    & span
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 44px
+      height: 44px
+      border-radius: 50%
+      padding: 9px
+      background-color: $yellow
+      margin-right: 15px
+    & svg
+      width: 25px
+    & path
+      fill: $blackTitles
