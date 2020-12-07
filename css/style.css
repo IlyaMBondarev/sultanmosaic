@@ -395,6 +395,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   text-transform: capitalize;
 }
+.popup-callback__block > label textarea {
+  margin-top: 10px;
+  box-shadow: 3px 4px 6px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #f8f8f8;
+  background-color: #ffffff;
+  color: #252b3e;
+  font-size: 18px;
+  letter-spacing: 0.45px;
+  padding: 14px 15px;
+  width: 100%;
+  resize: vertical;
+  min-height: 100px;
+}
 .popup-callback__button {
   margin-top: 10px;
   width: 100%;
@@ -1157,7 +1171,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(180deg);
   color: black;
 }
-.burger-menu__open:checked ~ .burger-menu__list {
+.burger-menu__open:checked + label + .burger-menu__list {
   left: 0;
 }
 .burger-menu__list {
@@ -3774,12 +3788,6 @@ a.map-block__link:nth-of-type(3):hover {
 }
 @media (max-width: 850px) {
   .catalog__left {
-    min-width: 283px;
-    max-width: 283px;
-  }
-}
-@media (max-width: 650px) {
-  .catalog__left {
     display: none;
   }
 }
@@ -3841,6 +3849,12 @@ a.map-block__link:nth-of-type(3):hover {
   font-size: 2.6rem;
   line-height: 135%;
   color: #6a6c74;
+}
+.catalog__list li a.catalog__link-active {
+  font-family: "PT sans bold";
+}
+.catalog__list li a:hover {
+  font-family: "PT sans bold";
 }
 .catalog__questions {
   display: flex;

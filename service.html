@@ -25,13 +25,20 @@
                 <label for="popupCallbackName">Ваше имя:
                     <input id="popupCallbackName" type="text" placeholder="Анастасия" class="_req">
                     <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
-                </label></div>
+                </label>
+            </div>
             <div class="popup-callback__block">
                 <label for="popupCallbackPhone">Телефон:
                     <input id="popupCallbackPhone" type="tel" placeholder="+7 (926) 000-00-00"
                            class="_req _phone masked">
                     <span class="input-error">Номер введен неверно!</span>
-                </label></div>
+                </label>
+            </div>
+            <div class="popup-callback__block">
+                <label for="popupCallbackMessage">Ваше сообщение:
+                    <textarea id="popupCallbackMessage"></textarea>
+                </label>
+            </div>
             <button class="popup-callback__button yellow-button" type="submit" data-text="Оставить заявку"><span>Оставить заявку</span></button>
             <p class="popup-callback__small-content">* Нажимая кнопку действия, вы соглашаетесь с&nbsp;<a href="#">пользовательским соглашением</a>.</p>
         </form>
@@ -130,11 +137,11 @@
                         <a href="index.html">SultanMosaic</a>
                     </div>
                     <a href="index.html" class="header__link burger-menu__link">Главная</a>
-                    <input type="checkbox" id="mobileMenu" class="burger-menu__open">
-                    <label for="mobileMenu" class="burger-menu__open-list"><span>Услуги</span><i
+                    <input type="checkbox" id="service1" class="burger-menu__open">
+                    <label for="service1" class="burger-menu__open-list"><span>Услуги</span><i
                             class="fa fa-chevron-right"></i></label>
                     <div class="burger-menu__list">
-                        <label for="mobileMenu" class="burger-menu__close-list"><i
+                        <label for="service1" class="burger-menu__close-list"><i
                                 class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
                         <ul>
                             <li><a href="service.html">Строительство хамамов</a></li>
@@ -142,6 +149,91 @@
                             <li><a href="service.html">Обслуживание бассейнов</a></li>
                             <li><a href="service.html">Строительство SPA-бассейнов</a></li>
                             <li><a href="service.html">Поликарбонатные перекрытия</a></li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" id="catalog1" class="burger-menu__open">
+                    <label for="catalog1" class="burger-menu__open-list"><span>Каталог</span><i
+                            class="fa fa-chevron-right"></i></label>
+                    <div class="burger-menu__list">
+                        <label for="catalog1" class="burger-menu__close-list"><i
+                                class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="drop11" class="burger-menu__open">
+                                <label for="drop11" class="burger-menu__open-list"><span>Мозаика</span><i
+                                        class="fa fa-chevron-right"></i></label>
+                                <div class="burger-menu__list">
+                                    <label for="drop11" class="burger-menu__close-list"><i
+                                            class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                                    <ul>
+                                        <li><a href="catalog.html">Деревянная мозаика</a></li>
+                                        <li><a href="catalog.html">Зеркальная мозаика</a></li>
+                                        <li><a href="catalog.html">Для бассейнов</a></li>
+                                        <li><a href="catalog.html">Эпоксидна затирка</a></li>
+                                        <li><a href="catalog.html">DUNE</a></li>
+                                        <li><a href="catalog.html">BISAZZA</a></li>
+                                        <li><a href="catalog.html">EZARRI</a></li>
+                                        <li><a href="catalog.html">ORRO</a></li>
+                                        <li><a href="catalog.html">ALMA</a></li>
+                                        <li><a href="catalog.html">ALMA US</a></li>
+                                        <li><a href="catalog.html">TOGAMA</a></li>
+                                        <li><a href="catalog.html">FABRIZIO ROBERTO</a></li>
+                                        <li><a href="catalog.html">PIXEL</a></li>
+                                        <li><a href="catalog.html">NS MOSAIC</a></li>
+                                        <li><a href="catalog.html">GAUDI CERAMICS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="drop12" class="burger-menu__open">
+                                <label for="drop12" class="burger-menu__open-list"><span>Комплектующие</span><i
+                                        class="fa fa-chevron-right"></i></label>
+                                <div class="burger-menu__list">
+                                    <label for="drop12" class="burger-menu__close-list"><i
+                                            class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                                    <ul>
+                                        <li><a href="catalog.html">Деревянная мозаика</a></li>
+                                        <li><a href="catalog.html">Зеркальная мозаика</a></li>
+                                        <li><a href="catalog.html">Для бассейнов</a></li>
+                                        <li><a href="catalog.html">Эпоксидна затирка</a></li>
+                                        <li><a href="catalog.html">DUNE</a></li>
+                                        <li><a href="catalog.html">BISAZZA</a></li>
+                                        <li><a href="catalog.html">EZARRI</a></li>
+                                        <li><a href="catalog.html">ORRO</a></li>
+                                        <li><a href="catalog.html">ALMA</a></li>
+                                        <li><a href="catalog.html">ALMA US</a></li>
+                                        <li><a href="catalog.html">TOGAMA</a></li>
+                                        <li><a href="catalog.html">FABRIZIO ROBERTO</a></li>
+                                        <li><a href="catalog.html">PIXEL</a></li>
+                                        <li><a href="catalog.html">NS MOSAIC</a></li>
+                                        <li><a href="catalog.html">GAUDI CERAMICS</a></li>
+                                    </ul>
+                                </div></li>
+                            <li>
+                                <input type="checkbox" id="drop13" class="burger-menu__open">
+                                <label for="drop13" class="burger-menu__open-list"><span>Химия</span><i
+                                        class="fa fa-chevron-right"></i></label>
+                                <div class="burger-menu__list">
+                                    <label for="drop13" class="burger-menu__close-list"><i
+                                            class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                                    <ul>
+                                        <li><a href="catalog.html">Деревянная мозаика</a></li>
+                                        <li><a href="catalog.html">Зеркальная мозаика</a></li>
+                                        <li><a href="catalog.html">Для бассейнов</a></li>
+                                        <li><a href="catalog.html">Эпоксидна затирка</a></li>
+                                        <li><a href="catalog.html">DUNE</a></li>
+                                        <li><a href="catalog.html">BISAZZA</a></li>
+                                        <li><a href="catalog.html">EZARRI</a></li>
+                                        <li><a href="catalog.html">ORRO</a></li>
+                                        <li><a href="catalog.html">ALMA</a></li>
+                                        <li><a href="catalog.html">ALMA US</a></li>
+                                        <li><a href="catalog.html">TOGAMA</a></li>
+                                        <li><a href="catalog.html">FABRIZIO ROBERTO</a></li>
+                                        <li><a href="catalog.html">PIXEL</a></li>
+                                        <li><a href="catalog.html">NS MOSAIC</a></li>
+                                        <li><a href="catalog.html">GAUDI CERAMICS</a></li>
+                                    </ul>
+                                </div></li>
                         </ul>
                     </div>
                     <a href="portfolio.html" class="header__link burger-menu__link">Портфолио</a>
@@ -261,20 +353,20 @@
                 </p>
             </div>
             <div class="header__burger">
-                <input id="burger" type="checkbox" class="burger-checkbox-switch">
-                <label for="burger" class="burger-checkbox"><span></span></label>
+                <input id="burger2" type="checkbox" class="burger-checkbox-switch">
+                <label for="burger2" class="burger-checkbox"><span></span></label>
                 <div class="burger-menu-bg">
-                    <label for="burger"></label>
+                    <label for="burger2"></label>
                     <div class="burger-menu">
                         <div class="header__logo logo burger-menu__logo">
                             <a href="index.html">SultanMosaic</a>
                         </div>
                         <a href="index.html" class="header__link burger-menu__link">Главная</a>
-                        <input type="checkbox" id="mobileMenu" class="burger-menu__open">
-                        <label for="mobileMenu" class="burger-menu__open-list"><span>Услуги</span><i
+                        <input type="checkbox" id="service2" class="burger-menu__open">
+                        <label for="service2" class="burger-menu__open-list"><span>Услуги</span><i
                                 class="fa fa-chevron-right"></i></label>
                         <div class="burger-menu__list">
-                            <label for="mobileMenu" class="burger-menu__close-list"><i
+                            <label for="service2" class="burger-menu__close-list"><i
                                     class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
                             <ul>
                                 <li><a href="service.html">Строительство хамамов</a></li>
@@ -282,6 +374,91 @@
                                 <li><a href="service.html">Обслуживание бассейнов</a></li>
                                 <li><a href="service.html">Строительство SPA-бассейнов</a></li>
                                 <li><a href="service.html">Поликарбонатные перекрытия</a></li>
+                            </ul>
+                        </div>
+                        <input type="checkbox" id="catalog2" class="burger-menu__open">
+                        <label for="catalog2" class="burger-menu__open-list"><span>Каталог</span><i
+                                class="fa fa-chevron-right"></i></label>
+                        <div class="burger-menu__list">
+                            <label for="catalog2" class="burger-menu__close-list"><i
+                                    class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="drop21" class="burger-menu__open">
+                                    <label for="drop21" class="burger-menu__open-list"><span>Мозаика</span><i
+                                            class="fa fa-chevron-right"></i></label>
+                                    <div class="burger-menu__list">
+                                        <label for="drop21" class="burger-menu__close-list"><i
+                                                class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                                        <ul>
+                                            <li><a href="catalog.html">Деревянная мозаика</a></li>
+                                            <li><a href="catalog.html">Зеркальная мозаика</a></li>
+                                            <li><a href="catalog.html">Для бассейнов</a></li>
+                                            <li><a href="catalog.html">Эпоксидна затирка</a></li>
+                                            <li><a href="catalog.html">DUNE</a></li>
+                                            <li><a href="catalog.html">BISAZZA</a></li>
+                                            <li><a href="catalog.html">EZARRI</a></li>
+                                            <li><a href="catalog.html">ORRO</a></li>
+                                            <li><a href="catalog.html">ALMA</a></li>
+                                            <li><a href="catalog.html">ALMA US</a></li>
+                                            <li><a href="catalog.html">TOGAMA</a></li>
+                                            <li><a href="catalog.html">FABRIZIO ROBERTO</a></li>
+                                            <li><a href="catalog.html">PIXEL</a></li>
+                                            <li><a href="catalog.html">NS MOSAIC</a></li>
+                                            <li><a href="catalog.html">GAUDI CERAMICS</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="drop22" class="burger-menu__open">
+                                    <label for="drop22" class="burger-menu__open-list"><span>Комплектующие</span><i
+                                            class="fa fa-chevron-right"></i></label>
+                                    <div class="burger-menu__list">
+                                        <label for="drop22" class="burger-menu__close-list"><i
+                                                class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                                        <ul>
+                                            <li><a href="catalog.html">Деревянная мозаика</a></li>
+                                            <li><a href="catalog.html">Зеркальная мозаика</a></li>
+                                            <li><a href="catalog.html">Для бассейнов</a></li>
+                                            <li><a href="catalog.html">Эпоксидна затирка</a></li>
+                                            <li><a href="catalog.html">DUNE</a></li>
+                                            <li><a href="catalog.html">BISAZZA</a></li>
+                                            <li><a href="catalog.html">EZARRI</a></li>
+                                            <li><a href="catalog.html">ORRO</a></li>
+                                            <li><a href="catalog.html">ALMA</a></li>
+                                            <li><a href="catalog.html">ALMA US</a></li>
+                                            <li><a href="catalog.html">TOGAMA</a></li>
+                                            <li><a href="catalog.html">FABRIZIO ROBERTO</a></li>
+                                            <li><a href="catalog.html">PIXEL</a></li>
+                                            <li><a href="catalog.html">NS MOSAIC</a></li>
+                                            <li><a href="catalog.html">GAUDI CERAMICS</a></li>
+                                        </ul>
+                                    </div></li>
+                                <li>
+                                    <input type="checkbox" id="drop23" class="burger-menu__open">
+                                    <label for="drop23" class="burger-menu__open-list"><span>Химия</span><i
+                                            class="fa fa-chevron-right"></i></label>
+                                    <div class="burger-menu__list">
+                                        <label for="drop23" class="burger-menu__close-list"><i
+                                                class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                                        <ul>
+                                            <li><a href="catalog.html">Деревянная мозаика</a></li>
+                                            <li><a href="catalog.html">Зеркальная мозаика</a></li>
+                                            <li><a href="catalog.html">Для бассейнов</a></li>
+                                            <li><a href="catalog.html">Эпоксидна затирка</a></li>
+                                            <li><a href="catalog.html">DUNE</a></li>
+                                            <li><a href="catalog.html">BISAZZA</a></li>
+                                            <li><a href="catalog.html">EZARRI</a></li>
+                                            <li><a href="catalog.html">ORRO</a></li>
+                                            <li><a href="catalog.html">ALMA</a></li>
+                                            <li><a href="catalog.html">ALMA US</a></li>
+                                            <li><a href="catalog.html">TOGAMA</a></li>
+                                            <li><a href="catalog.html">FABRIZIO ROBERTO</a></li>
+                                            <li><a href="catalog.html">PIXEL</a></li>
+                                            <li><a href="catalog.html">NS MOSAIC</a></li>
+                                            <li><a href="catalog.html">GAUDI CERAMICS</a></li>
+                                        </ul>
+                                    </div></li>
                             </ul>
                         </div>
                         <a href="portfolio.html" class="header__link burger-menu__link">Портфолио</a>
@@ -958,20 +1135,20 @@
                 <a href="index.html">SultanMosaic</a>
             </div>
             <div class="header__burger footer__burger">
-                <input id="burger" type="checkbox" class="burger-checkbox-switch">
-                <label for="burger" class="burger-checkbox"><span></span></label>
+                <input id="burger3" type="checkbox" class="burger-checkbox-switch">
+                <label for="burger3" class="burger-checkbox"><span></span></label>
                 <div class="burger-menu-bg">
-                    <label for="burger"></label>
+                    <label for="burger3"></label>
                     <div class="burger-menu">
                         <div class="header__logo logo burger-menu__logo">
                             <a href="index.html">SultanMosaic</a>
                         </div>
                         <a href="index.html" class="header__link burger-menu__link">Главная</a>
-                        <input type="checkbox" id="mobileMenu" class="burger-menu__open">
-                        <label for="mobileMenu" class="burger-menu__open-list"><span>Услуги</span><i
+                        <input type="checkbox" id="service3" class="burger-menu__open">
+                        <label for="service3" class="burger-menu__open-list"><span>Услуги</span><i
                                 class="fa fa-chevron-right"></i></label>
                         <div class="burger-menu__list">
-                            <label for="mobileMenu" class="burger-menu__close-list"><i
+                            <label for="service3" class="burger-menu__close-list"><i
                                     class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
                             <ul>
                                 <li><a href="service.html">Строительство хамамов</a></li>
@@ -979,6 +1156,91 @@
                                 <li><a href="service.html">Обслуживание бассейнов</a></li>
                                 <li><a href="service.html">Строительство SPA-бассейнов</a></li>
                                 <li><a href="service.html">Поликарбонатные перекрытия</a></li>
+                            </ul>
+                        </div>
+                        <input type="checkbox" id="catalog3" class="burger-menu__open">
+                        <label for="catalog3" class="burger-menu__open-list"><span>Каталог</span><i
+                                class="fa fa-chevron-right"></i></label>
+                        <div class="burger-menu__list">
+                            <label for="catalog3" class="burger-menu__close-list"><i
+                                    class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="drop31" class="burger-menu__open">
+                                    <label for="drop31" class="burger-menu__open-list"><span>Мозаика</span><i
+                                            class="fa fa-chevron-right"></i></label>
+                                    <div class="burger-menu__list">
+                                        <label for="drop31" class="burger-menu__close-list"><i
+                                                class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                                        <ul>
+                                            <li><a href="catalog.html">Деревянная мозаика</a></li>
+                                            <li><a href="catalog.html">Зеркальная мозаика</a></li>
+                                            <li><a href="catalog.html">Для бассейнов</a></li>
+                                            <li><a href="catalog.html">Эпоксидна затирка</a></li>
+                                            <li><a href="catalog.html">DUNE</a></li>
+                                            <li><a href="catalog.html">BISAZZA</a></li>
+                                            <li><a href="catalog.html">EZARRI</a></li>
+                                            <li><a href="catalog.html">ORRO</a></li>
+                                            <li><a href="catalog.html">ALMA</a></li>
+                                            <li><a href="catalog.html">ALMA US</a></li>
+                                            <li><a href="catalog.html">TOGAMA</a></li>
+                                            <li><a href="catalog.html">FABRIZIO ROBERTO</a></li>
+                                            <li><a href="catalog.html">PIXEL</a></li>
+                                            <li><a href="catalog.html">NS MOSAIC</a></li>
+                                            <li><a href="catalog.html">GAUDI CERAMICS</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="drop32" class="burger-menu__open">
+                                    <label for="drop32" class="burger-menu__open-list"><span>Комплектующие</span><i
+                                            class="fa fa-chevron-right"></i></label>
+                                    <div class="burger-menu__list">
+                                        <label for="drop32" class="burger-menu__close-list"><i
+                                                class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                                        <ul>
+                                            <li><a href="catalog.html">Деревянная мозаика</a></li>
+                                            <li><a href="catalog.html">Зеркальная мозаика</a></li>
+                                            <li><a href="catalog.html">Для бассейнов</a></li>
+                                            <li><a href="catalog.html">Эпоксидна затирка</a></li>
+                                            <li><a href="catalog.html">DUNE</a></li>
+                                            <li><a href="catalog.html">BISAZZA</a></li>
+                                            <li><a href="catalog.html">EZARRI</a></li>
+                                            <li><a href="catalog.html">ORRO</a></li>
+                                            <li><a href="catalog.html">ALMA</a></li>
+                                            <li><a href="catalog.html">ALMA US</a></li>
+                                            <li><a href="catalog.html">TOGAMA</a></li>
+                                            <li><a href="catalog.html">FABRIZIO ROBERTO</a></li>
+                                            <li><a href="catalog.html">PIXEL</a></li>
+                                            <li><a href="catalog.html">NS MOSAIC</a></li>
+                                            <li><a href="catalog.html">GAUDI CERAMICS</a></li>
+                                        </ul>
+                                    </div></li>
+                                <li>
+                                    <input type="checkbox" id="drop33" class="burger-menu__open">
+                                    <label for="drop33" class="burger-menu__open-list"><span>Химия</span><i
+                                            class="fa fa-chevron-right"></i></label>
+                                    <div class="burger-menu__list">
+                                        <label for="drop33" class="burger-menu__close-list"><i
+                                                class="fa fa-chevron-left"></i><span>Назад</span><span></span></label>
+                                        <ul>
+                                            <li><a href="catalog.html">Деревянная мозаика</a></li>
+                                            <li><a href="catalog.html">Зеркальная мозаика</a></li>
+                                            <li><a href="catalog.html">Для бассейнов</a></li>
+                                            <li><a href="catalog.html">Эпоксидна затирка</a></li>
+                                            <li><a href="catalog.html">DUNE</a></li>
+                                            <li><a href="catalog.html">BISAZZA</a></li>
+                                            <li><a href="catalog.html">EZARRI</a></li>
+                                            <li><a href="catalog.html">ORRO</a></li>
+                                            <li><a href="catalog.html">ALMA</a></li>
+                                            <li><a href="catalog.html">ALMA US</a></li>
+                                            <li><a href="catalog.html">TOGAMA</a></li>
+                                            <li><a href="catalog.html">FABRIZIO ROBERTO</a></li>
+                                            <li><a href="catalog.html">PIXEL</a></li>
+                                            <li><a href="catalog.html">NS MOSAIC</a></li>
+                                            <li><a href="catalog.html">GAUDI CERAMICS</a></li>
+                                        </ul>
+                                    </div></li>
                             </ul>
                         </div>
                         <a href="portfolio.html" class="header__link burger-menu__link">Портфолио</a>
