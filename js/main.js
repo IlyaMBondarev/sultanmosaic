@@ -66,32 +66,37 @@ if ($('.popup-callback-bg-estimate').length) {
 
 //project
 if ($('.popup-project-bg').length) {
-    let popupProjectBackground = document.querySelector('.popup-project-bg');
-    let popupProjectOpenBtns = document.querySelectorAll('.popup-project-open-btn');
-    let popupProject = popupProjectBackground.querySelector('.popup-project');
-    let popupProjectCloseBtn = popupProjectBackground.querySelector('.popup-project__close');
-    const popupProjectForm = document.getElementById('popupProjectForm');
+    let popupProjectBackgrounds = document.querySelectorAll('.popup-project-bg');
+    let projects = document.querySelectorAll('.projects-item');
 
-    popupProjectForm.addEventListener('submit', event => {
-        event.preventDefault();
-        formSend(popupProjectForm);
-    });
+    for (let i = 0; i < projects.length; i++) {
 
-    popupProjectOpenBtns.forEach(button => {
-        button.addEventListener('click', () => {
-            popupProjectBackground.classList.add('popup-project-bg-visible');
+        let popupProjectOpenBtns = projects[i].querySelectorAll('.popup-project-open-btn');
+        let popupProject = popupProjectBackgrounds[i].querySelector('.popup-project');
+        let popupProjectCloseBtn = popupProjectBackgrounds[i].querySelector('.popup-project__close');
+        const popupProjectForm = popupProject.querySelector('form');
+
+        popupProjectForm.addEventListener('submit', event => {
+            event.preventDefault();
+            formSend(popupProjectForm);
         });
-    })
 
-    popupProjectBackground.addEventListener('click', (event) => {
-        if (event.target === popupProjectBackground) {
-            popupProjectBackground.classList.remove('popup-project-bg-visible');
-        }
-    });
+        popupProjectOpenBtns.forEach(button => {
+            button.addEventListener('click', () => {
+                popupProjectBackgrounds[i].classList.add('popup-project-bg-visible');
+            });
+        })
 
-    popupProjectCloseBtn.addEventListener('click', () => {
-        popupProjectBackground.classList.remove('popup-project-bg-visible');
-    });
+        popupProjectBackgrounds[i].addEventListener('click', (event) => {
+            if (event.target === popupProjectBackgrounds[i]) {
+                popupProjectBackgrounds[i].classList.remove('popup-project-bg-visible');
+            }
+        });
+
+        popupProjectCloseBtn.addEventListener('click', () => {
+            popupProjectBackgrounds[i].classList.remove('popup-project-bg-visible');
+        });
+    }
 }
 
 // validation
