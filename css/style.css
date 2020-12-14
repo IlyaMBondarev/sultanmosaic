@@ -434,6 +434,27 @@ h1, h2, h3, h4, h5, h6 {
           text-decoration: #6a6c74 solid underline;
 }
 
+.popup-project-bg, .popup-catalog-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -500;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0s linear;
+}
+.popup-project-bg-visible, .popup-catalog-bg-visible {
+  transition: opacity 0.2s linear;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1500;
+}
+
 .popup-project {
   position: fixed;
   box-shadow: 7px 9px 21px 1px rgba(0, 0, 0, 0.1);
@@ -454,26 +475,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 30px;
     max-height: 80%;
   }
-}
-.popup-project-bg {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -500;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0s linear;
-}
-.popup-project-bg-visible {
-  transition: opacity 0.2s linear;
-  opacity: 1;
-  visibility: visible;
-  z-index: 1500;
 }
 .popup-project__close {
   position: absolute;
@@ -734,9 +735,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__nav > ul > li > a:focus + .drop-menu > ul, .header__nav > ul > li > button:focus + .drop-menu > ul {
   max-height: 200px;
+  opacity: 1;
 }
-.header__nav > ul > li > a:focus + .drop-menu:before, .header__nav > ul > li > button:focus + .drop-menu:before {
+.header__nav > ul > li > a:focus + .drop-menu-service:before, .header__nav > ul > li > button:focus + .drop-menu-service:before {
   height: 115%;
+}
+.header__nav > ul > li > a:focus + .drop-menu-catalog:before, .header__nav > ul > li > button:focus + .drop-menu-catalog:before {
+  height: 125%;
 }
 .header__nav > ul > li > a:focus + .drop-menu:after, .header__nav > ul > li > button:focus + .drop-menu:after {
   width: 10px;
@@ -745,6 +750,7 @@ h1, h2, h3, h4, h5, h6 {
   .header__nav > ul > li > a:focus + .drop-menu > ul, .header__nav > ul > li > button:focus + .drop-menu > ul {
     max-height: 200px;
     padding: 20px;
+    opacity: 1;
   }
   .header__nav > ul > li > a:focus + .drop-menu:before, .header__nav > ul > li > button:focus + .drop-menu:before {
     height: 100%;
@@ -861,16 +867,17 @@ h1, h2, h3, h4, h5, h6 {
   .drop-menu:hover > ul {
     padding: 20px;
     max-height: 200px;
+    opacity: 1;
   }
 }
 .drop-menu > ul {
   transition: all 0.2s linear;
   overflow: hidden;
   max-height: 0;
+  opacity: 0;
 }
 @media (max-width: 1098px) {
   .drop-menu > ul {
-    transition: all 0.2s linear;
     overflow: hidden;
     max-height: 0;
     padding: 0 20px;
@@ -964,9 +971,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .drop-menu:hover > ul {
   max-height: 200px;
-}
-.drop-menu:hover:before {
-  height: 115%;
+  opacity: 1;
 }
 .drop-menu:hover:after {
   width: 10px;
@@ -975,8 +980,24 @@ h1, h2, h3, h4, h5, h6 {
   .drop-menu:hover > ul {
     max-height: 200px;
     padding: 20px;
+    opacity: 1;
   }
-  .drop-menu:hover:before {
+}
+
+.drop .drop-menu-service:hover:before, .drop-menu-service:hover:before {
+  height: 115%;
+}
+@media (max-width: 1098px) {
+  .drop .drop-menu-service:hover:before, .drop-menu-service:hover:before {
+    height: 100%;
+  }
+}
+
+.drop .drop-menu-catalog:hover:before, .drop-menu-catalog:hover:before {
+  height: 125%;
+}
+@media (max-width: 1098px) {
+  .drop .drop-menu-catalog:hover:before, .drop-menu-catalog:hover:before {
     height: 100%;
   }
 }

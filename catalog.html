@@ -65,101 +65,7 @@
             <p class="popup-callback__small-content">* Нажимая кнопку действия, вы соглашаетесь с&nbsp;<a href="#">пользовательским соглашением</a>.</p>
         </form>
     </div>
-</div>        <div class="popup-project-bg">
-            <div class="popup-project">
-                <button class="popup-project__close">+</button>
-                <div class="popup-project__left">
-                    <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img
-                            src="img/Услуга/arrow-left.png" alt="left"></button>
-                    <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img
-                            src="img/Услуга/arrow-right.png" alt="right"></button>
-                    <div class="owl-carousel">
-                        <div class="popup-project__image">
-                            <img src="img/Портфолио/photo_2.jpg" alt="">
-                        </div>
-                        <div class="popup-project__image">
-                            <img src="img/Портфолио/photo_3.jpg" alt="">
-                        </div>
-                        <div class="popup-project__image">
-                            <img src="img/Портфолио/photo_4.jpg" alt="">
-                        </div>
-                        <div class="popup-project__image">
-                            <img src="img/Портфолио/photo_5.jpg" alt="">
-                        </div>
-                        <div class="popup-project__image">
-                            <img src="img/Портфолио/photo_2.jpg" alt="">
-                        </div>
-                        <div class="popup-project__image">
-                            <img src="img/Портфолио/photo_3.jpg" alt="">
-                        </div>
-                        <div class="popup-project__image">
-                            <img src="img/Портфолио/photo_4.jpg" alt="">
-                        </div>
-                        <div class="popup-project__image">
-                            <img src="img/Портфолио/photo_5.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="popup-project__right">
-                    <h3 class="popup-project__title"><span>стеклянная мозаика</span></h3>
-                    <div class="popup-project__subtitle">
-                        <p>Производитель: <span>gaudi ceramics</span></p>
-                    </div>
-                    <div class="popup-project__art">
-                        <p>Арт: <span>2589754</span></p>
-                    </div>
-                    <p class="popup-project__table-name">Характеристики:</p>
-                    <table class="popup-project__table">
-                        <tr>
-                            <td>Материал</td>
-                            <td>Стеклянная</td>
-                        </tr>
-                        <tr>
-                            <td>Размер сетки</td>
-                            <td>327*327 мм</td>
-                        </tr>
-                        <tr>
-                            <td>Размер чипа</td>
-                            <td>20*20 мм</td>
-                        </tr>
-                        <tr>
-                            <td>Толщина чипа</td>
-                            <td>4 мм</td>
-                        </tr>
-                        <tr>
-                            <td>Поверхность</td>
-                            <td>Матовая</td>
-                        </tr>
-                        <tr>
-                            <td>Страна производства</td>
-                            <td>Китай</td>
-                        </tr>
-                        <tr>
-                            <td>Цвет</td>
-                            <td>Голубая</td>
-                        </tr>
-                    </table>
-                </div>
-                <form class="popup-project__form" id="popupProjectForm">
-                    <div class="popup-project__block">
-                        <label for="popupProjectName">
-                            <input id="popupProjectName" type="text" placeholder="Ваше Имя" class="_req">
-                            <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
-                        </label>
-                    </div>
-                    <div class="popup-project__block">
-                        <label for="popupProjectPhone">
-                            <input id="popupProjectPhone" type="tel" placeholder="Ваш Телефон"
-                                   class="_req _phone masked">
-                            <span class="input-error">Номер введен неверно!</span>
-                        </label>
-                    </div>
-                    <button class="popup-project__button yellow-button" type="submit" data-text="Жду звонок"><span>Жду звонок</span>
-                    </button>
-                </form>
-            </div>
-        </div>
-        <div class="first-screen">
+</div>        <div class="first-screen">
 <header class="header container">
     <div class="header__top">
         <div class="header__logo logo">
@@ -170,7 +76,7 @@
                 <li><a href="index.html">Главная</a></li>
                 <li>
                     <button class="drop">Услуги</button>
-                    <div class="drop-menu">
+                    <div class="drop-menu drop-menu-service">
                         <ul>
                             <li><a href="service.html">Строительство хамамов</a></li>
                             <li><a href="service.html">Строительство бассейнов из бетона</a></li>
@@ -180,7 +86,16 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="catalog.html">Каталог</a></li>
+                <li>
+                    <button class="drop">Каталог</button>
+                    <div class="drop-menu drop-menu-catalog">
+                        <ul>
+                            <li><a href="catalog.html">Мозаика</a></li>
+                            <li><a href="catalog.html">Комплектующие</a></li>
+                            <li><a href="catalog.html">Химия</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="portfolio.html">Портфолио</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
@@ -405,7 +320,16 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="catalog.html">Каталог</a></li>
+                    <li>
+                        <button class="drop">Каталог</button>
+                        <div class="drop-menu-sticky">
+                            <ul>
+                                <li><a href="catalog.html">Мозаика</a></li>
+                                <li><a href="catalog.html">Комплектующие</a></li>
+                                <li><a href="catalog.html">Химия</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="portfolio.html">Портфолио</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
@@ -796,6 +720,100 @@
                     <div class="catalog__right">
                         <div class="catalog__items">
                             <div class="catalog__item catalog-item">
+                                <div class="popup-catalog-bg">
+                                    <div class="popup-project">
+                                        <button class="popup-project__close">+</button>
+                                        <div class="popup-project__left">
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img
+                                                    src="img/Услуга/arrow-left.png" alt="left"></button>
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img
+                                                    src="img/Услуга/arrow-right.png" alt="right"></button>
+                                            <div class="owl-carousel">
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-project__right">
+                                            <h3 class="popup-project__title"><span>стеклянная мозаика</span></h3>
+                                            <div class="popup-project__subtitle">
+                                                <p>Производитель: <span>gaudi ceramics</span></p>
+                                            </div>
+                                            <div class="popup-project__art">
+                                                <p>Арт: <span>2589754</span></p>
+                                            </div>
+                                            <p class="popup-project__table-name">Характеристики:</p>
+                                            <table class="popup-project__table">
+                                                <tr>
+                                                    <td>Материал</td>
+                                                    <td>Стеклянная</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер сетки</td>
+                                                    <td>327*327 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер чипа</td>
+                                                    <td>20*20 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Толщина чипа</td>
+                                                    <td>4 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Поверхность</td>
+                                                    <td>Матовая</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Страна производства</td>
+                                                    <td>Китай</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Цвет</td>
+                                                    <td>Голубая</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <form class="popup-project__form" id="popupProjectForm1">
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectName1">
+                                                    <input id="popupProjectName1" type="text" placeholder="Ваше Имя" class="_req">
+                                                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                                                </label>
+                                            </div>
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectPhone1">
+                                                    <input id="popupProjectPhone1" type="tel" placeholder="Ваш Телефон"
+                                                           class="_req _phone masked">
+                                                    <span class="input-error">Номер введен неверно!</span>
+                                                </label>
+                                            </div>
+                                            <button class="popup-project__button yellow-button" type="submit" data-text="Жду звонок"><span>Жду звонок</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                                 <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
                                 <div class="catalog-item__block flying-block">
                                     <h3 class="catalog-item__name">стеклянная мозаика</h3>
@@ -809,6 +827,100 @@
                                 </div>
                             </div>
                             <div class="catalog__item catalog-item">
+                                <div class="popup-catalog-bg">
+                                    <div class="popup-project">
+                                        <button class="popup-project__close">+</button>
+                                        <div class="popup-project__left">
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img
+                                                    src="img/Услуга/arrow-left.png" alt="left"></button>
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img
+                                                    src="img/Услуга/arrow-right.png" alt="right"></button>
+                                            <div class="owl-carousel">
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-project__right">
+                                            <h3 class="popup-project__title"><span>стеклянная мозаика</span></h3>
+                                            <div class="popup-project__subtitle">
+                                                <p>Производитель: <span>gaudi ceramics</span></p>
+                                            </div>
+                                            <div class="popup-project__art">
+                                                <p>Арт: <span>2589754</span></p>
+                                            </div>
+                                            <p class="popup-project__table-name">Характеристики:</p>
+                                            <table class="popup-project__table">
+                                                <tr>
+                                                    <td>Материал</td>
+                                                    <td>Стеклянная</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер сетки</td>
+                                                    <td>327*327 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер чипа</td>
+                                                    <td>20*20 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Толщина чипа</td>
+                                                    <td>4 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Поверхность</td>
+                                                    <td>Матовая</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Страна производства</td>
+                                                    <td>Китай</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Цвет</td>
+                                                    <td>Голубая</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <form class="popup-project__form" id="popupProjectForm2">
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectName2">
+                                                    <input id="popupProjectName2" type="text" placeholder="Ваше Имя" class="_req">
+                                                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                                                </label>
+                                            </div>
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectPhone2">
+                                                    <input id="popupProjectPhone2" type="tel" placeholder="Ваш Телефон"
+                                                           class="_req _phone masked">
+                                                    <span class="input-error">Номер введен неверно!</span>
+                                                </label>
+                                            </div>
+                                            <button class="popup-project__button yellow-button" type="submit" data-text="Жду звонок"><span>Жду звонок</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                                 <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
                                 <div class="catalog-item__block flying-block">
                                     <h3 class="catalog-item__name">стеклянная мозаика</h3>
@@ -822,6 +934,100 @@
                                 </div>
                             </div>
                             <div class="catalog__item catalog-item">
+                                <div class="popup-catalog-bg">
+                                    <div class="popup-project">
+                                        <button class="popup-project__close">+</button>
+                                        <div class="popup-project__left">
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img
+                                                    src="img/Услуга/arrow-left.png" alt="left"></button>
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img
+                                                    src="img/Услуга/arrow-right.png" alt="right"></button>
+                                            <div class="owl-carousel">
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-project__right">
+                                            <h3 class="popup-project__title"><span>стеклянная мозаика</span></h3>
+                                            <div class="popup-project__subtitle">
+                                                <p>Производитель: <span>gaudi ceramics</span></p>
+                                            </div>
+                                            <div class="popup-project__art">
+                                                <p>Арт: <span>2589754</span></p>
+                                            </div>
+                                            <p class="popup-project__table-name">Характеристики:</p>
+                                            <table class="popup-project__table">
+                                                <tr>
+                                                    <td>Материал</td>
+                                                    <td>Стеклянная</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер сетки</td>
+                                                    <td>327*327 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер чипа</td>
+                                                    <td>20*20 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Толщина чипа</td>
+                                                    <td>4 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Поверхность</td>
+                                                    <td>Матовая</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Страна производства</td>
+                                                    <td>Китай</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Цвет</td>
+                                                    <td>Голубая</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <form class="popup-project__form" id="popupProjectForm3">
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectName3">
+                                                    <input id="popupProjectName3" type="text" placeholder="Ваше Имя" class="_req">
+                                                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                                                </label>
+                                            </div>
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectPhone3">
+                                                    <input id="popupProjectPhone3" type="tel" placeholder="Ваш Телефон"
+                                                           class="_req _phone masked">
+                                                    <span class="input-error">Номер введен неверно!</span>
+                                                </label>
+                                            </div>
+                                            <button class="popup-project__button yellow-button" type="submit" data-text="Жду звонок"><span>Жду звонок</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                                 <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
                                 <div class="catalog-item__block flying-block">
                                     <h3 class="catalog-item__name">стеклянная мозаика</h3>
@@ -835,6 +1041,100 @@
                                 </div>
                             </div>
                             <div class="catalog__item catalog-item">
+                                <div class="popup-catalog-bg">
+                                    <div class="popup-project">
+                                        <button class="popup-project__close">+</button>
+                                        <div class="popup-project__left">
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img
+                                                    src="img/Услуга/arrow-left.png" alt="left"></button>
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img
+                                                    src="img/Услуга/arrow-right.png" alt="right"></button>
+                                            <div class="owl-carousel">
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-project__right">
+                                            <h3 class="popup-project__title"><span>стеклянная мозаика</span></h3>
+                                            <div class="popup-project__subtitle">
+                                                <p>Производитель: <span>gaudi ceramics</span></p>
+                                            </div>
+                                            <div class="popup-project__art">
+                                                <p>Арт: <span>2589754</span></p>
+                                            </div>
+                                            <p class="popup-project__table-name">Характеристики:</p>
+                                            <table class="popup-project__table">
+                                                <tr>
+                                                    <td>Материал</td>
+                                                    <td>Стеклянная</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер сетки</td>
+                                                    <td>327*327 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер чипа</td>
+                                                    <td>20*20 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Толщина чипа</td>
+                                                    <td>4 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Поверхность</td>
+                                                    <td>Матовая</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Страна производства</td>
+                                                    <td>Китай</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Цвет</td>
+                                                    <td>Голубая</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <form class="popup-project__form" id="popupProjectForm4">
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectName4">
+                                                    <input id="popupProjectName4" type="text" placeholder="Ваше Имя" class="_req">
+                                                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                                                </label>
+                                            </div>
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectPhone4">
+                                                    <input id="popupProjectPhone4" type="tel" placeholder="Ваш Телефон"
+                                                           class="_req _phone masked">
+                                                    <span class="input-error">Номер введен неверно!</span>
+                                                </label>
+                                            </div>
+                                            <button class="popup-project__button yellow-button" type="submit" data-text="Жду звонок"><span>Жду звонок</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                                 <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
                                 <div class="catalog-item__block flying-block">
                                     <h3 class="catalog-item__name">стеклянная мозаика</h3>
@@ -848,6 +1148,100 @@
                                 </div>
                             </div>
                             <div class="catalog__item catalog-item">
+                                <div class="popup-catalog-bg">
+                                    <div class="popup-project">
+                                        <button class="popup-project__close">+</button>
+                                        <div class="popup-project__left">
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img
+                                                    src="img/Услуга/arrow-left.png" alt="left"></button>
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img
+                                                    src="img/Услуга/arrow-right.png" alt="right"></button>
+                                            <div class="owl-carousel">
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-project__right">
+                                            <h3 class="popup-project__title"><span>стеклянная мозаика</span></h3>
+                                            <div class="popup-project__subtitle">
+                                                <p>Производитель: <span>gaudi ceramics</span></p>
+                                            </div>
+                                            <div class="popup-project__art">
+                                                <p>Арт: <span>2589754</span></p>
+                                            </div>
+                                            <p class="popup-project__table-name">Характеристики:</p>
+                                            <table class="popup-project__table">
+                                                <tr>
+                                                    <td>Материал</td>
+                                                    <td>Стеклянная</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер сетки</td>
+                                                    <td>327*327 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер чипа</td>
+                                                    <td>20*20 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Толщина чипа</td>
+                                                    <td>4 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Поверхность</td>
+                                                    <td>Матовая</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Страна производства</td>
+                                                    <td>Китай</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Цвет</td>
+                                                    <td>Голубая</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <form class="popup-project__form" id="popupProjectForm5">
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectName5">
+                                                    <input id="popupProjectName5" type="text" placeholder="Ваше Имя" class="_req">
+                                                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                                                </label>
+                                            </div>
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectPhone5">
+                                                    <input id="popupProjectPhone5" type="tel" placeholder="Ваш Телефон"
+                                                           class="_req _phone masked">
+                                                    <span class="input-error">Номер введен неверно!</span>
+                                                </label>
+                                            </div>
+                                            <button class="popup-project__button yellow-button" type="submit" data-text="Жду звонок"><span>Жду звонок</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                                 <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
                                 <div class="catalog-item__block flying-block">
                                     <h3 class="catalog-item__name">стеклянная мозаика</h3>
@@ -861,6 +1255,100 @@
                                 </div>
                             </div>
                             <div class="catalog__item catalog-item">
+                                <div class="popup-catalog-bg">
+                                    <div class="popup-project">
+                                        <button class="popup-project__close">+</button>
+                                        <div class="popup-project__left">
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img
+                                                    src="img/Услуга/arrow-left.png" alt="left"></button>
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img
+                                                    src="img/Услуга/arrow-right.png" alt="right"></button>
+                                            <div class="owl-carousel">
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-project__right">
+                                            <h3 class="popup-project__title"><span>стеклянная мозаика</span></h3>
+                                            <div class="popup-project__subtitle">
+                                                <p>Производитель: <span>gaudi ceramics</span></p>
+                                            </div>
+                                            <div class="popup-project__art">
+                                                <p>Арт: <span>2589754</span></p>
+                                            </div>
+                                            <p class="popup-project__table-name">Характеристики:</p>
+                                            <table class="popup-project__table">
+                                                <tr>
+                                                    <td>Материал</td>
+                                                    <td>Стеклянная</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер сетки</td>
+                                                    <td>327*327 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер чипа</td>
+                                                    <td>20*20 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Толщина чипа</td>
+                                                    <td>4 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Поверхность</td>
+                                                    <td>Матовая</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Страна производства</td>
+                                                    <td>Китай</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Цвет</td>
+                                                    <td>Голубая</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <form class="popup-project__form" id="popupProjectForm6">
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectName6">
+                                                    <input id="popupProjectName6" type="text" placeholder="Ваше Имя" class="_req">
+                                                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                                                </label>
+                                            </div>
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectPhone6">
+                                                    <input id="popupProjectPhone6" type="tel" placeholder="Ваш Телефон"
+                                                           class="_req _phone masked">
+                                                    <span class="input-error">Номер введен неверно!</span>
+                                                </label>
+                                            </div>
+                                            <button class="popup-project__button yellow-button" type="submit" data-text="Жду звонок"><span>Жду звонок</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                                 <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
                                 <div class="catalog-item__block flying-block">
                                     <h3 class="catalog-item__name">стеклянная мозаика</h3>
@@ -874,6 +1362,100 @@
                                 </div>
                             </div>
                             <div class="catalog__item catalog-item">
+                                <div class="popup-catalog-bg">
+                                    <div class="popup-project">
+                                        <button class="popup-project__close">+</button>
+                                        <div class="popup-project__left">
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img
+                                                    src="img/Услуга/arrow-left.png" alt="left"></button>
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img
+                                                    src="img/Услуга/arrow-right.png" alt="right"></button>
+                                            <div class="owl-carousel">
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-project__right">
+                                            <h3 class="popup-project__title"><span>стеклянная мозаика</span></h3>
+                                            <div class="popup-project__subtitle">
+                                                <p>Производитель: <span>gaudi ceramics</span></p>
+                                            </div>
+                                            <div class="popup-project__art">
+                                                <p>Арт: <span>2589754</span></p>
+                                            </div>
+                                            <p class="popup-project__table-name">Характеристики:</p>
+                                            <table class="popup-project__table">
+                                                <tr>
+                                                    <td>Материал</td>
+                                                    <td>Стеклянная</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер сетки</td>
+                                                    <td>327*327 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер чипа</td>
+                                                    <td>20*20 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Толщина чипа</td>
+                                                    <td>4 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Поверхность</td>
+                                                    <td>Матовая</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Страна производства</td>
+                                                    <td>Китай</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Цвет</td>
+                                                    <td>Голубая</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <form class="popup-project__form" id="popupProjectForm7">
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectName7">
+                                                    <input id="popupProjectName7" type="text" placeholder="Ваше Имя" class="_req">
+                                                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                                                </label>
+                                            </div>
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectPhone7">
+                                                    <input id="popupProjectPhone7" type="tel" placeholder="Ваш Телефон"
+                                                           class="_req _phone masked">
+                                                    <span class="input-error">Номер введен неверно!</span>
+                                                </label>
+                                            </div>
+                                            <button class="popup-project__button yellow-button" type="submit" data-text="Жду звонок"><span>Жду звонок</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                                 <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
                                 <div class="catalog-item__block flying-block">
                                     <h3 class="catalog-item__name">стеклянная мозаика</h3>
@@ -887,6 +1469,100 @@
                                 </div>
                             </div>
                             <div class="catalog__item catalog-item">
+                                <div class="popup-catalog-bg">
+                                    <div class="popup-project">
+                                        <button class="popup-project__close">+</button>
+                                        <div class="popup-project__left">
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img
+                                                    src="img/Услуга/arrow-left.png" alt="left"></button>
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img
+                                                    src="img/Услуга/arrow-right.png" alt="right"></button>
+                                            <div class="owl-carousel">
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-project__right">
+                                            <h3 class="popup-project__title"><span>стеклянная мозаика</span></h3>
+                                            <div class="popup-project__subtitle">
+                                                <p>Производитель: <span>gaudi ceramics</span></p>
+                                            </div>
+                                            <div class="popup-project__art">
+                                                <p>Арт: <span>2589754</span></p>
+                                            </div>
+                                            <p class="popup-project__table-name">Характеристики:</p>
+                                            <table class="popup-project__table">
+                                                <tr>
+                                                    <td>Материал</td>
+                                                    <td>Стеклянная</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер сетки</td>
+                                                    <td>327*327 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер чипа</td>
+                                                    <td>20*20 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Толщина чипа</td>
+                                                    <td>4 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Поверхность</td>
+                                                    <td>Матовая</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Страна производства</td>
+                                                    <td>Китай</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Цвет</td>
+                                                    <td>Голубая</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <form class="popup-project__form" id="popupProjectForm8">
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectName8">
+                                                    <input id="popupProjectName8" type="text" placeholder="Ваше Имя" class="_req">
+                                                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                                                </label>
+                                            </div>
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectPhone8">
+                                                    <input id="popupProjectPhone8" type="tel" placeholder="Ваш Телефон"
+                                                           class="_req _phone masked">
+                                                    <span class="input-error">Номер введен неверно!</span>
+                                                </label>
+                                            </div>
+                                            <button class="popup-project__button yellow-button" type="submit" data-text="Жду звонок"><span>Жду звонок</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                                 <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
                                 <div class="catalog-item__block flying-block">
                                     <h3 class="catalog-item__name">стеклянная мозаика</h3>
@@ -900,6 +1576,100 @@
                                 </div>
                             </div>
                             <div class="catalog__item catalog-item">
+                                <div class="popup-catalog-bg">
+                                    <div class="popup-project">
+                                        <button class="popup-project__close">+</button>
+                                        <div class="popup-project__left">
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-left"><img
+                                                    src="img/Услуга/arrow-left.png" alt="left"></button>
+                                            <button class="popup-project-carousel-slider__arrow popup-project-carousel-slider__arrow-right"><img
+                                                    src="img/Услуга/arrow-right.png" alt="right"></button>
+                                            <div class="owl-carousel">
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_2.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_3.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_4.jpg" alt="">
+                                                </div>
+                                                <div class="popup-project__image">
+                                                    <img src="img/Портфолио/photo_5.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-project__right">
+                                            <h3 class="popup-project__title"><span>стеклянная мозаика</span></h3>
+                                            <div class="popup-project__subtitle">
+                                                <p>Производитель: <span>gaudi ceramics</span></p>
+                                            </div>
+                                            <div class="popup-project__art">
+                                                <p>Арт: <span>2589754</span></p>
+                                            </div>
+                                            <p class="popup-project__table-name">Характеристики:</p>
+                                            <table class="popup-project__table">
+                                                <tr>
+                                                    <td>Материал</td>
+                                                    <td>Стеклянная</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер сетки</td>
+                                                    <td>327*327 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Размер чипа</td>
+                                                    <td>20*20 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Толщина чипа</td>
+                                                    <td>4 мм</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Поверхность</td>
+                                                    <td>Матовая</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Страна производства</td>
+                                                    <td>Китай</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Цвет</td>
+                                                    <td>Голубая</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <form class="popup-project__form" id="popupProjectForm9">
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectName9">
+                                                    <input id="popupProjectName9" type="text" placeholder="Ваше Имя" class="_req">
+                                                    <span class="input-error">Имя должно быть от 3 до 32 символов!</span>
+                                                </label>
+                                            </div>
+                                            <div class="popup-project__block">
+                                                <label for="popupProjectPhone9">
+                                                    <input id="popupProjectPhone9" type="tel" placeholder="Ваш Телефон"
+                                                           class="_req _phone masked">
+                                                    <span class="input-error">Номер введен неверно!</span>
+                                                </label>
+                                            </div>
+                                            <button class="popup-project__button yellow-button" type="submit" data-text="Жду звонок"><span>Жду звонок</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                                 <img src="img/Каталог/photo_1.jpg" alt="" class="catalog-item__image">
                                 <div class="catalog-item__block flying-block">
                                     <h3 class="catalog-item__name">стеклянная мозаика</h3>
